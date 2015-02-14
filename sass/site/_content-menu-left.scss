@@ -1,0 +1,23 @@
+.content-menu-left {
+    display: none;
+}
+
+.content-menu-left-item {
+    font-size: 1.2rem;
+    @include rem(margin-bottom, 0.5);
+
+    a {
+        color: $blue-dark;
+
+      &:hover {
+        color: lighten($blue-dark, 20%);
+      }
+    } 
+}
+
+@media all and (min-width: 769px) {
+    .content-menu-left {
+        display: block;
+        position: fixed;
+    }
+}

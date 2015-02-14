@@ -1,14 +1,75 @@
 {% extends "layout.html" %}
 
-{% block menu %}
-<ul>
-  <li>Hola</li>
-  <li>mundo</li>
-  <li>cruel</li>
-</ul>
+{% block header %}
+<div class="container menu__holder">
+    <input type="checkbox" id="toggler" class="toggler__input"/>
+    <div class="navigation">
+        <div class="logo">
+            <a href="#">Styleguide</a>
+        </div>
+        <div class="toggler__menu">
+            <label for="toggler" class="toggler__label menu--header">Menu</label>
+            <label for="toggler" class="toggler__label close--header">Close</label>
+        </div>
+    </div>
+    <div class="toggler__content">
+        <ul class="toggler__navigation">
+            <li class="toggler__items"><a href="#">CALENDAR</a></li>
+            <li class="toggler__items"><a href="#">CONTACTS</a></li>
+            <li class="toggler__items"><a href="#">HELP</a></li>
+        </ul>
+    </div>
+</div>
+
 {% endblock %}
 
-{% block content %}
-<h1>Hello world</h1>
+{% block content_left %}
+<ul class="content-menu-left">
+    <li class="content-menu-left-item"><a href="#" class="bold">Overviews</a></li>
+    <li class="content-menu-left-item"><a href="#" class="bold">HTML and markup</a></li>
+    <li class="content-menu-left-item"><a href="#" class="bold">CSS and styling</a></li>
+    <li class="content-menu-left-item"><a href="#">Grid system</a></li>
+    <li class="content-menu-left-item"><a href="#">Text block</a></li>
+    <li class="content-menu-left-item"><a href="#">Components</a></li>
+    <li class="content-menu-left-item"><a href="#">Forms</a></li>
+    <li class="content-menu-left-item"><a href="#">Tables</a></li>
+    <li class="content-menu-left-item"><a href="#">Buttons</a></li>
+    <li class="content-menu-left-item"><a href="#">Colors</a></li>
+    <li class="content-menu-left-item"><a href="#">Icons</a></li>
+    <li class="content-menu-left-item"><a href="#">Helper classes</a></li>
+    <li class="content-menu-left-item"><a href="#">Mobile</a></li>
+    <li class="content-menu-left-item"><a href="#">Print</a></li>
+    <li class="content-menu-left-item"><a href="#">Icons</a></li>
+    <li class="content-menu-left-item"><a href="#" class="bold">Animations</a></li>
+    <li class="content-menu-left-item"><a href="#" class="bold">Writing copy</a></li>
+    <li class="content-menu-left-item"><a href="#" class="bold">Tutorials</a></li>
+    <li class="content-menu-left-item"><a href="#">Single column list</a></li>
+    <li class="content-menu-left-item"><a href="#">Two column list</a></li>
+  </ul>
+{% endblock %}
+
+{% block content_right %}
+<h2>Button (Primary)</h2>
+<p>Primary buttons are only used when there is an exceedingly distinct and clear call-to-action. An example of this is the Vote button on a poll, or a Send button on the comment publisher.</p>
+<div class="container-component">
+    <h4>default</h4>
+    <div class="component">
+        <span>Primary Button</span>
+    </div>
+</div>
+<div class="mark-up">
+    <pre>
+        <code>
+            <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn bg-primary-btn btn--primary pvs size-full brm no-border"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"text-color-5 f3 fw-semibold"</span>&gt;</span><span class="variable">Primary Button</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+        </code>
+    </pre>
+</div>
+{% endblock %}
+
+{% block footer %}
+<span>© Copyright 2014 SocialBro.</span>
+
 {% endblock %}
 

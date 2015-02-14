@@ -1,0 +1,8 @@
+@mixin rem($property, $sizeValue: 1.6) {
+  #{$property}: ($sizeValue * 10) + px;
+  #{$property}: $sizeValue + rem;
+}
+
+// div {
+//   @include rem(margin, 1);
+// }

@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+    background-color: $blue-dark;
+}
+
+.logo {
+    line-height: 2.7rem;
+    float: left;
+    font-size: 2.2rem;
+    padding: 1.5rem 2rem;
+
+    a {
+      color: $white;
+    }
+}
+
+.menu__holder {
+    @extend .clearfix;
+}
+
+.navigation {
+    @extend .clearfix;
+}
+
+.toggler__input {
+    display: none;
+}
+
+.close--header, .menu--header {
+    cursor: pointer;
+    line-height: 2.7rem;
+    user-select: none;
+    -webkit-user-select: none;
+    display: inline-block;
+    @include rem(margin-right, 1.5);
+    vertical-align: middle;
+    color: $white;
+    font-size: 1.4rem;
+    padding: 1.5rem 2rem;
+}
+
+.close--header {
+    display: none;
+}
+
+.toggler__menu {
+    float: right;
+}
+
+.toggler__content {
+    background-color: $blue;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+    transition: height 1s ease;
+}
+
+.toggler__navigation {
+    list-style: none;
+}
+
+.toggler__items {
+    display: block;
+    border-bottom: 1px solid $blue-dark;
+    line-height: 2.7rem;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $blue-light;
+      }
+
+    a {
+      color: $white;
+      font-size: 1.4rem;
+      display: inline-block;
+      padding: 1rem 2rem;
+
+      &:hover {
+          width: 100%;
+      }
+    }
+}
+
+.toggler__input:checked ~ .navigation .toggler__menu {
+    .menu--header {
+        display: none;
+    }
+    .close--header {
+        display: block;
+    }
+}
+
+.toggler__input:checked ~ .toggler__content {
+    height: 144px;
+}
+
+@media all and (min-width: 769px) {
+  .toggler__label {
+      display: none;
+  }
+
+  .toggler__content {
+      background-color: transparent;
+      float: right;
+      height: auto;
+      padding: 0;
+      width: auto;
+
+      a {
+          padding: 1.5rem 2rem;
+      }
+  }
+
+  .toggler__navigation {
+      float: right;
+      padding: 0;
+  }
+
+  .toggler__items {
+      display: inline-block;
+      border: none;
+      padding: 0;
+  }
+
+  .toggler__items:last-child {
+      @include rem(margin-right, 0);
+  }
+
+  .navigation {
+      float: left;
+      padding: 0;
+  }
+
+  .menu__holder {
+      margin: auto;
+      max-height: 57px;
+  }
+
+  .logo {
+      padding: 1.5rem 1rem;
+  }
+
+  .toggler__input ~ .navigation .toggler__menu,
+  .toggler__input:checked ~ .navigation .toggler__menu  {
+    .menu--header, .close--header {
+        display: none;
+    }
+  }
+}

@@ -18,17 +18,25 @@
 
   </head>
   <body>
-
-    <div class="contet">
-    {% block content %}
+    <div class="header">
+    {% block header %}
     {% endblock %}
     </div>
+    
+    <div class="container content">
+        {% block content_left %}
+        {% endblock %}
 
-    <div class="sidebar">
-    {% block menu %}
+        <div class="content-menu-right">
+        {% block content_right %}
+        {% endblock %}
+        </div>
+    </div>
+    <div class="footer">
+    {% block footer %}
     {% endblock %}
     </div>
-
+    
     <script src="/javascript/main.js"></script>
   </body>
 </html>

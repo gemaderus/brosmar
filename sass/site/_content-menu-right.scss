@@ -1,0 +1,59 @@
+.content-menu-right {
+    display: block;
+    border: 1px solid $gray;
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    margin: auto;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    overflow: hidden;
+}
+
+.content-menu-right > p {
+    font-weight: 300;
+    color: #647687;
+    margin: 0;
+}
+
+.content-menu-right > h2, 
+.content-menu-right > p {
+    padding: 1.4rem 1.8rem;
+    background-color: $white;
+}
+
+.content-menu-right > h2, 
+.content-menu-right > p, 
+.container-component {
+    border-bottom: 1px solid $border;
+}
+
+.container-component {
+    background-color: $gray-light;
+    padding: 1.5rem 2rem;
+}
+
+.container-component > h4 {
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+}
+
+.component {
+    padding: 1rem 0;
+    border-radius: 5px;
+    width: 320px;
+    background-color: $blue-light;
+    text-align: center;
+    color: white;
+    margin: 2.8rem auto 1.4rem;
+}
+
+@media all and (min-width: 769px) {
+    .content-menu-right {
+        float: right;
+        width: 70%;
+        margin: 0;
+    }
+
+}
+
