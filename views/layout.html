@@ -13,13 +13,21 @@
     <meta name="description" content="put something here">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/stylesheets/sandbox.css" />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
     <script src='//localhost:35729/livereload.js'></script>
-    
+
   </head>
   <body>
 
+    <div class="contet">
     {% block content %}
     {% endblock %}
+    </div>
+
+    <div class="sidebar">
+    {% block menu %}
+    {% endblock %}
+    </div>
 
     <script src="/javascript/main.js"></script>
   </body>

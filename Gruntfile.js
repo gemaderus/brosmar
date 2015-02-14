@@ -19,7 +19,8 @@ module.exports = function(grunt) {
           outputStyle: 'expanded'
         },
         files: {
-          'public/stylesheets/sandbox.css': 'sass/sandbox.scss'
+          'public/stylesheets/sandbox.css': 'sass/styleguide/sandbox.scss',
+          'public/stylesheets/main.css': 'sass/site/main.scss'
         }
       },
       dist: {
@@ -27,7 +28,8 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'public/stylesheets/sandbox.min.css': 'sass/sandbox.scss'
+          'public/stylesheets/sandbox.min.css': 'sass/styleguide/sandbox.scss',
+          'public/stylesheets/main.min.css': 'sass/site/main.scss'
         }
       }
     },
@@ -47,8 +49,8 @@ module.exports = function(grunt) {
       },
 
       sass: {
-        files: ['sass/**/*.scss', 'views/**/*.ejs'],
-        tasks: ['sass', 'autoprefixer'],
+        files: ['sass/**/*.scss', 'views/**/*.html'],
+        tasks: ['sass:dev', 'autoprefixer'],
         options: {
           livereload: true,
         }
@@ -73,7 +75,7 @@ module.exports = function(grunt) {
         browsers: ['> 1%', 'last 5 versions', 'Firefox ESR', 'Opera 12.1']
       },
       no_dest: {
-        src: 'public/stylesheets/sandbox.css'
+        src: 'public/stylesheets/*.css'
       }
     },
 
@@ -150,8 +152,8 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', ['help']);
-  grunt.registerTask('build', ['sass:dist']);
+  grunt.registerTask('build', ['sass:dist', 'autoprefixer']);
   grunt.registerTask('sprites', ['sprite']);
   grunt.registerTask('svg', ['clean', 'svgmin', 'grunticon']);
-  grunt.registerTask('server', ['sass:dev', 'express', 'open:dev', 'watch']);
+  grunt.registerTask('server', ['sass:dev', 'autoprefixer', 'express', 'open:dev', 'watch']);
 }
