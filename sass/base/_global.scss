@@ -13,7 +13,6 @@ General fonts and other global styles of the page.
 }
 
 html {
-  @include lato-regular;
   -webkit-font-smoothing: antialiased;
   font-size: 62.5%;
   line-height: $line-size;

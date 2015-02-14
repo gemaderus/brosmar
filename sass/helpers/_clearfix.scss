@@ -11,7 +11,7 @@ Clear floats utility.
 
 */
 
-%clearfix {
+%clearfix, .clearfix {
 
   &:before, &:after {
     content: '';
