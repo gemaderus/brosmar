@@ -1,75 +1,127 @@
 {% extends "layout.html" %}
 
-{% block header %}
-<div class="container menu__holder">
-    <input type="checkbox" id="toggler" class="toggler__input"/>
-    <div class="navigation">
-        <div class="logo">
-            <a href="#">Styleguide</a>
-        </div>
-        <div class="toggler__menu">
-            <label for="toggler" class="toggler__label menu--header">Menu</label>
-            <label for="toggler" class="toggler__label close--header">Close</label>
-        </div>
-    </div>
-    <div class="toggler__content">
-        <ul class="toggler__navigation">
-            <li class="toggler__items"><a href="#">CALENDAR</a></li>
-            <li class="toggler__items"><a href="#">CONTACTS</a></li>
-            <li class="toggler__items"><a href="#">HELP</a></li>
-        </ul>
-    </div>
-</div>
-
-{% endblock %}
-
 {% block content_left %}
-<ul class="content-menu-left">
-    <li class="content-menu-left-item"><a href="#" class="bold">Overviews</a></li>
-    <li class="content-menu-left-item"><a href="#" class="bold">HTML and markup</a></li>
-    <li class="content-menu-left-item"><a href="#" class="bold">CSS and styling</a></li>
-    <li class="content-menu-left-item"><a href="#">Grid system</a></li>
-    <li class="content-menu-left-item"><a href="#">Text block</a></li>
-    <li class="content-menu-left-item"><a href="#">Components</a></li>
-    <li class="content-menu-left-item"><a href="#">Forms</a></li>
-    <li class="content-menu-left-item"><a href="#">Tables</a></li>
-    <li class="content-menu-left-item"><a href="#">Buttons</a></li>
-    <li class="content-menu-left-item"><a href="#">Colors</a></li>
-    <li class="content-menu-left-item"><a href="#">Icons</a></li>
-    <li class="content-menu-left-item"><a href="#">Helper classes</a></li>
-    <li class="content-menu-left-item"><a href="#">Mobile</a></li>
-    <li class="content-menu-left-item"><a href="#">Print</a></li>
-    <li class="content-menu-left-item"><a href="#">Icons</a></li>
-    <li class="content-menu-left-item"><a href="#" class="bold">Animations</a></li>
-    <li class="content-menu-left-item"><a href="#" class="bold">Writing copy</a></li>
-    <li class="content-menu-left-item"><a href="#" class="bold">Tutorials</a></li>
-    <li class="content-menu-left-item"><a href="#">Single column list</a></li>
-    <li class="content-menu-left-item"><a href="#">Two column list</a></li>
+<ul class="st-content-left">
+    <li class="st-content-left-item"><a href="#" class="bold">Overviews</a></li>
+    <li class="st-content-left-item"><a href="#" class="bold">HTML and markup</a></li>
+    <li class="st-content-left-item"><a href="#" class="bold">CSS and styling</a></li>
+    <li class="st-content-left-item"><a href="#">Grid system</a></li>
+    <li class="st-content-left-item"><a href="#">Text block</a></li>
+    <li class="st-content-left-item"><a href="#">Components</a></li>
+    <li class="st-content-left-item"><a href="#">Forms</a></li>
+    <li class="st-content-left-item"><a href="#">Tables</a></li>
+    <li class="st-content-left-item"><a href="#">Buttons</a></li>
+    <li class="st-content-left-item"><a href="#">Colors</a></li>
+    <li class="st-content-left-item"><a href="#">Icons</a></li>
+    <li class="st-content-left-item"><a href="#">Helper classes</a></li>
+    <li class="st-content-left-item"><a href="#">Mobile</a></li>
+    <li class="st-content-left-item"><a href="#">Print</a></li>
+    <li class="st-content-left-item"><a href="#">Icons</a></li>
+    <li class="st-content-left-item"><a href="#" class="bold">Animations</a></li>
+    <li class="st-content-left-item"><a href="#" class="bold">Writing copy</a></li>
+    <li class="st-content-left-item"><a href="#" class="bold">Tutorials</a></li>
+    <li class="st-content-left-item"><a href="#">Single column list</a></li>
+    <li class="st-content-left-item"><a href="#">Two column list</a></li>
   </ul>
 {% endblock %}
 
 {% block content_right %}
-<h2>Button (Primary)</h2>
-<p>Primary buttons are only used when there is an exceedingly distinct and clear call-to-action. An example of this is the Vote button on a poll, or a Send button on the comment publisher.</p>
-<div class="container-component">
-    <h4>default</h4>
-    <div class="component">
-        <span>Primary Button</span>
+<div class="st-content-pills">
+    <h2>Button (Primary)</h2>
+    <p>Primary buttons are only used when there is an exceedingly distinct and clear call-to-action. An example of this is the Vote button on a poll, or a Send button on the comment publisher.</p>
+    <div class="st-container-component">
+        <h4>default</h4>
+        <div class="st-component">
+            <span>Primary Button</span>
+        </div>
     </div>
-</div>
-<div class="mark-up">
-    <pre>
-        <code>
-            <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn bg-primary-btn btn--primary pvs size-full brm no-border"</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"text-color-5 f3 fw-semibold"</span>&gt;</span><span class="variable">Primary Button</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-            <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
-        </code>
-    </pre>
+
+    <div class="st-mark-up">
+        <pre>
+            <code>
+                <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn bg-primary-btn btn--primary pvs size-full brm no-border"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"text-color-5 f3 fw-semibold"</span>&gt;</span><span class="variable">Primary Button</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+                <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+            </code>
+        </pre>
+    </div>
 </div>
 {% endblock %}
 
-{% block footer %}
-<span>© Copyright 2014 SocialBro.</span>
-
+{% block st_samples %}
+<div class="st-content-pills">
+    <h2>Colours</h2>
+    <ul class="st-samples">
+        <li class="st-sample st-socialbro">
+            <div class="st-sample-details">
+              <h6>socialbro</h6>
+              <span>#26B7C2</span>
+            </div>
+        </li>
+        <li class="st-sample st-service">
+            <div class="st-sample-details">
+                <h6>service</h6>
+                <span>#009EE1</span>
+            </div>
+        </li>
+        <li class="st-sample st-error">
+            <div class="st-sample-details">
+                <h6>error</h6>
+                <span>#C60E32</span>
+            </div>
+        </li>
+        <li class="st-sample st-succeed">
+            <div class="st-sample-details">
+                <h6>succeed</h6>
+                <span>#6AB624</span>
+            </div>
+        </li>
+        <li class="st-sample st-primary">
+            <div class="st-sample-details">
+                <h6>primary</h6>
+                <span>#F18B46</span>
+            </div>
+        </li>
+        <li class="st-sample st-black">
+            <div class="st-sample-details">
+                <h6>main titles</h6>
+                <span>#000000</span>
+            </div>
+        </li>
+        <li class="st-sample st-titles">
+            <div class="st-sample-details">
+                <h6>support titles</h6>
+                <span>#804997</span>
+            </div>
+        </li>
+        <li class="st-sample st-common-text">
+            <div class="st-sample-details">
+                <h6>common text</h6>
+                <span>#565656</span>
+            </div>
+        </li>
+        <li class="st-sample st-support-tex">
+            <div class="st-sample-details">
+                <h6>support text</h6>
+                <span>#B1B1B1</span>
+            </div>
+        </li>
+        <li class="st-sample st-blackgrounds">
+            <div class="st-sample-details">
+                <h6>blackgrounds</h6>
+                <span>#F2F2F2</span>
+            </div>
+        </li>
+    </ul>
+    <div class="st-mark-up">
+        <pre>
+            <code>
+                <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn bg-primary-btn btn--primary pvs size-full brm no-border"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"text-color-5 f3 fw-semibold"</span>&gt;</span><span class="variable">Primary Button</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+                <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+            </code>
+        </pre>
+    </div>
+</div>
 {% endblock %}
 

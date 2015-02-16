@@ -2,12 +2,7 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-
 html {
-    font-size: 62.5%;
     font-family: 'Open Sans';
 }
 
@@ -21,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-.content {
+.st-content {
     padding: 2rem 1rem;
     margin: 10px auto;
     @extend .clearfix;
@@ -30,9 +25,9 @@ a {
     width: 100%;
 }
 
-.content:after {
-    width: 100%;
-    height: 60px;
-    display: block;
-    clear: both;
-}
+// .st-content:after {
+//     width: 100%;
+//     height: 60px;
+//     display: block;
+//     clear: both;
+// }

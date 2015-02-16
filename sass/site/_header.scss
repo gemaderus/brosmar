@@ -2,34 +2,38 @@
    Header
    ========================================================================== */
 
-.header {
-    background-color: $blue-dark;
+.st-header {
+    background-color: $socialbro;
 }
 
-.logo {
+.st-logo {
     line-height: 2.7rem;
     float: left;
     font-size: 2.2rem;
     padding: 1.5rem 2rem;
 
     a {
-      color: $white;
+        color: $white;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
-.menu__holder {
+.st-menu__holder {
     @extend .clearfix;
 }
 
-.navigation {
+.st-navigation {
     @extend .clearfix;
 }
 
-.toggler__input {
+.st-toggler__input {
     display: none;
 }
 
-.close--header, .menu--header {
+.st-close--header, .st-menu--header {
     cursor: pointer;
     line-height: 2.7rem;
     user-select: none;
@@ -42,15 +46,15 @@
     padding: 1.5rem 2rem;
 }
 
-.close--header {
+.st-close--header {
     display: none;
 }
 
-.toggler__menu {
+.st-toggler__menu {
     float: right;
 }
 
-.toggler__content {
+.st-toggler__content {
     background-color: $blue;
     height: 0;
     overflow: hidden;
@@ -59,11 +63,11 @@
     transition: height 1s ease;
 }
 
-.toggler__navigation {
+.st-toggler__navigation {
     list-style: none;
 }
 
-.toggler__items {
+.st-toggler__items {
     display: block;
     border-bottom: 1px solid $blue-dark;
     line-height: 2.7rem;
@@ -81,29 +85,30 @@
 
       &:hover {
           width: 100%;
+          text-decoration: none;
       }
     }
 }
 
-.toggler__input:checked ~ .navigation .toggler__menu {
-    .menu--header {
+.st-toggler__input:checked ~ .st-navigation .st-toggler__menu {
+    .st-menu--header {
         display: none;
     }
-    .close--header {
+    .st-close--header {
         display: block;
     }
 }
 
-.toggler__input:checked ~ .toggler__content {
+.st-toggler__input:checked ~ .st-toggler__content {
     height: 144px;
 }
 
 @media all and (min-width: 769px) {
-  .toggler__label {
+  .st-toggler__label {
       display: none;
   }
 
-  .toggler__content {
+  .st-toggler__content {
       background-color: transparent;
       float: right;
       height: auto;
@@ -115,38 +120,38 @@
       }
   }
 
-  .toggler__navigation {
+  .st-toggler__navigation {
       float: right;
       padding: 0;
   }
 
-  .toggler__items {
+  .st-toggler__items {
       display: inline-block;
       border: none;
       padding: 0;
   }
 
-  .toggler__items:last-child {
+  .st-toggler__items:last-child {
       @include rem(margin-right, 0);
   }
 
-  .navigation {
+  .st-navigation {
       float: left;
       padding: 0;
   }
 
-  .menu__holder {
+  .st-menu__holder {
       margin: auto;
       max-height: 57px;
   }
 
-  .logo {
+  .st-logo {
       padding: 1.5rem 1rem;
   }
 
-  .toggler__input ~ .navigation .toggler__menu,
-  .toggler__input:checked ~ .navigation .toggler__menu  {
-    .menu--header, .close--header {
+  .st-toggler__input ~ .st-navigation .st-toggler__menu,
+  .st-toggler__input:checked ~ .st-navigation .st-toggler__menu  {
+    .st-menu--header, .st-close--header {
         display: none;
     }
   }

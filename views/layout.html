@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js st" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,25 +18,47 @@
 
   </head>
   <body>
-    <div class="header">
-    {% block header %}
-    {% endblock %}
+    <div class="st-header">
+      <div class="st-container st-menu__holder">
+          <input type="checkbox" id="toggler" class="st-toggler__input"/>
+          <div class="st-navigation">
+              <div class="st-logo">
+                  <a href="#">Styleguide</a>
+              </div>
+              <div class="st-toggler__menu">
+                  <label for="toggler" class="st-toggler__label st-menu--header">Menu</label>
+                  <label for="toggler" class="st-toggler__label st-close--header">Close</label>
+              </div>
+          </div>
+          <div class="st-toggler__content">
+              <ul class="st-toggler__navigation">
+                  <li class="st-toggler__items"><a href="#">CALENDAR</a></li>
+                  <li class="st-toggler__items"><a href="#">CONTACTS</a></li>
+                  <li class="st-toggler__items"><a href="#">HELP</a></li>
+              </ul>
+          </div>
+      </div>
     </div>
     
-    <div class="container content">
+    <div class="st-container st-content">
         {% block content_left %}
         {% endblock %}
 
-        <div class="content-menu-right">
+        <div class="st-content-right">
         {% block content_right %}
         {% endblock %}
         </div>
-    </div>
-    <div class="footer">
-    {% block footer %}
-    {% endblock %}
+
+        <div class="st-content-right">
+        {% block st_samples %}
+        {% endblock %}
+        </div>
     </div>
     
+    <div class="st-footer">
+      <span>© Copyright 2014 SocialBro.</span>
+    </div>
+
     <script src="/javascript/main.js"></script>
   </body>
 </html>

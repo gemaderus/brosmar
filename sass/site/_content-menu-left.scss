@@ -1,8 +1,8 @@
-.content-menu-left {
+.st-content-left {
     display: none;
 }
 
-.content-menu-left-item {
+.st-content-left-item {
     font-size: 1.2rem;
     @include rem(margin-bottom, 0.5);
 
@@ -16,7 +16,7 @@
 }
 
 @media all and (min-width: 769px) {
-    .content-menu-left {
+    .st-content-left {
         display: block;
         position: fixed;
     }

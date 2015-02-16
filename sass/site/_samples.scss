@@ -1,94 +1,93 @@
-.container-samples {
-  background-color: #2D4053;
-  padding: 10px;
-  width: 80rem;
-}
-
-.samples {
-  list-style: none;
+.st-sample-details h6,
+.st-sample-details p {
   margin: 0;
-  padding: 0;
 }
 
-.sample {
+.st-sample-details h6 {
+    text-transform: uppercase;
+}
+
+.st-samples {
+  padding: 3rem 1.8rem;
+  text-align: justify;
+}
+
+.st-sample {
   background-color: white;
-  padding-top: 21rem;
+  padding-top: 15rem;
   border-radius: 4px;
   overflow: hidden;
   width: 18rem;
   display: inline-block;
-  margin-right: 1.2rem;
+  margin-bottom: 1.8rem;
+  border: 1px solid $border;
 
   &:last-child {
     margin-right: 0;
   }
 }
 
-.sample-small {
-  padding-top: 13.5rem;
+.st-sample-small {
+  padding-top: 8rem;
   width: 11rem;
 }
 
-.sample-details {
-  text-transform: uppercase;
-  background-color: #fff;
-  border-top: 1px solid #ddd;
-  color: $gray-dark;
-  padding: 1rem;
-  text-align: center;
+.st-sample-details {
+    text-transform: uppercase;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    color: $gray-dark;
+    padding: 1rem;
+    text-align: center;
 }
 
-.sample-details h6,
-.sample-details p {
-  margin: 0;
+.st-socialbro {
+    background-color: $socialbro;
 }
 
-.anchor-navy {
-  background-color: $anchor-navy;
+.st-service {
+    background-color: $service;
 }
 
-.primary-blue {
-    background-color: $primary-blue;
+.st-error {
+    background-color: $error;
 }
 
-.slate-gray {
-    background-color: $slate-gray;
+.st-succeed {
+    background-color: $succeed;
 }
 
-.white {
-    background-color: $white;
+.st-primary {
+    background-color: $primary;
 }
 
-.post {
-    background-color: $post;
+.st-black {
+    background-color: $black;
 }
 
-.thanks {
-    background-color: $thanks;
+.st-titles {
+    background-color: $titles;
 }
 
-.account {
-    background-color: $account;
+.st-common-text {
+    background-color: $common-text;
 }
 
-.task {
-    background-color: $task;
+.st-support-tex {
+    background-color: $support-text;
 }
 
-.opportunity {
-    background-color: $opportunity;
+.st-blackgrounds {
+    background-color: $black-grounds;
 }
 
-.event {
-    background-color: $event;
-}
-
-.container-definition {
+.st-container-definition {
     width: 51.5rem;
     margin: auto;
+    background-color: $black-grounds;
 }
 
-.container-definition > p {
+.st-container-definition > p {
     margin: 130px 0 30px 0;
     color: $gray;
     font-size: 1.4rem;

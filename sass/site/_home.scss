@@ -1,0 +1,31 @@
+.st-p, .st-task-list {
+    line-height: 1.6;
+    color: $black;
+}
+
+.st-h2, .st-h3 {
+    margin-top: 1em;
+    margin-bottom: 16px;
+}
+
+.st-h2 {
+    font-size: 2.2rem;
+}
+
+.st-h3 {
+    font-size: 2rem;
+}
+
+.st-task-list {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.st-p + .st-task-list {
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+}
+
+.st-task-list + .st-p {
+    margin-top: 1.6rem;
+}

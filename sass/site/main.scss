@@ -2,6 +2,7 @@
 
 @import "normalise";
 @import "mixins";
+@import "../styleguide/generic/settings";
 @import "fonts";
 @import "colors";
 @import "heading";
@@ -27,6 +28,7 @@
 
 // LAYOUT
 @import "header";
+@import "home";
 @import "content-menu-left";
 @import "content-menu-right";
 @import "samples";
