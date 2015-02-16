@@ -101,8 +101,8 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'assets/svg',
         src: ['*.svg'],
-        dest: 'assets/svg/compressed',
-        ext: '.colors-light-danger-success.svg'
+        dest: 'assets/svg/compressed'
+        //ext: '.colors-light-danger-success.svg'
       }
     },
 
