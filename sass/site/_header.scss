@@ -27,6 +27,7 @@
 
 .st-navigation {
     @extend .clearfix;
+    border-bottom: 1px solid darken($socialbro, 5%);
 }
 
 .st-toggler__input {
@@ -55,12 +56,12 @@
 }
 
 .st-toggler__content {
-    background-color: $blue;
-    height: 0;
+    background-color: $socialbro;
+    max-height: 0;
     overflow: hidden;
     position: relative;
     z-index: 999;
-    transition: height 1s ease;
+    transition: max-height .5s ease;
 }
 
 .st-toggler__navigation {
@@ -69,13 +70,13 @@
 
 .st-toggler__items {
     display: block;
-    border-bottom: 1px solid $blue-dark;
+    border-bottom: 1px solid darken($socialbro, 5%);
     line-height: 2.7rem;
     cursor: pointer;
-    
+
     &:hover {
-        background-color: $blue-light;
-      }
+        background-color: darken($socialbro, 5%);
+    }
 
     a {
       color: $white;
@@ -100,7 +101,7 @@
 }
 
 .st-toggler__input:checked ~ .st-toggler__content {
-    height: 144px;
+    max-height: 150px;
 }
 
 @media all and (min-width: 769px) {
@@ -142,12 +143,15 @@
 
   .st-menu__holder {
       margin: auto;
-      max-height: 57px;
   }
 
   .st-logo {
       padding: 1.5rem 1rem;
   }
+    .st-toggler__content,
+    .st-toggler__input:checked ~ .st-toggler__content {
+        max-height: none;
+    }
 
   .st-toggler__input ~ .st-navigation .st-toggler__menu,
   .st-toggler__input:checked ~ .st-navigation .st-toggler__menu  {

@@ -1,6 +1,8 @@
-.st-p, .st-task-list {
+.st-p,
+.st-task-list {
+    font-size: 1.4rem;
     line-height: 1.6;
-    color: $black;
+    color: darken($socialbro, 30%);
 }
 
 .st-h2, .st-h3 {
@@ -9,10 +11,12 @@
 }
 
 .st-h2 {
+    color: $socialbro;
     font-size: 2.2rem;
 }
 
 .st-h3 {
+    color: $socialbro;
     font-size: 2rem;
 }
 

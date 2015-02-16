@@ -56,12 +56,12 @@ module.exports = function(grunt) {
         }
       },
 
-      js: {
-        files: ['javascripts/**/*.js'],
-        options: {
-          livereload: true,
-        }
-      }
+      // js: {
+      //   files: ['javascripts/**/*.js'],
+      //   options: {
+      //     livereload: true,
+      //   }
+      // }
 
     },
 
