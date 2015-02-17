@@ -1,0 +1,43 @@
+.pagination-items {
+    font-size: 0;
+    text-align: center;
+}
+
+.pagination-item {
+    display: inline-block;
+    padding: 0.7rem 1.35rem;
+    border-left: 1px solid $border;
+    border-top: 1px solid  $border;
+    border-bottom: 1px solid  $border;
+    text-align: center;
+    margin-right: 0;
+    font-size: 1.4rem;
+
+    &:hover {
+        background-color: #FC9046;
+        a {
+            color: white;
+        }
+    }
+
+    &:last-child {
+        border-right: 1px solid $border;
+    }
+}
+
+.pagination-item-large {
+    background-color: $socialbro;
+    text-transform: uppercase;
+
+        a {
+            color: white;
+        }
+}
+
+.prev {
+    border-radius: 4px 0 0 4px;
+}
+
+.next {
+    border-radius: 0 4px 4px 0;
+}

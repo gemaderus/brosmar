@@ -1,56 +1,96 @@
-.icon-pause-danger { background-image: url('/public/images/icons/png/pause-danger.png'); background-repeat: no-repeat; }
+.icon-banknote { background-image: url('/public/images/icons/png/banknote.png'); background-repeat: no-repeat; }
 
-.icon-pause-light { background-image: url('/public/images/icons/png/pause-light.png'); background-repeat: no-repeat; }
+.icon-bubble { background-image: url('/public/images/icons/png/bubble.png'); background-repeat: no-repeat; }
 
-.icon-pause-success { background-image: url('/public/images/icons/png/pause-success.png'); background-repeat: no-repeat; }
+.icon-bulb { background-image: url('/public/images/icons/png/bulb.png'); background-repeat: no-repeat; }
 
-.icon-pause { background-image: url('/public/images/icons/png/pause.png'); background-repeat: no-repeat; }
+.icon-calendar { background-image: url('/public/images/icons/png/calendar.png'); background-repeat: no-repeat; }
 
-.icon-pencil-danger { background-image: url('/public/images/icons/png/pencil-danger.png'); background-repeat: no-repeat; }
+.icon-camera { background-image: url('/public/images/icons/png/camera.png'); background-repeat: no-repeat; }
 
-.icon-pencil-light { background-image: url('/public/images/icons/png/pencil-light.png'); background-repeat: no-repeat; }
+.icon-clip { background-image: url('/public/images/icons/png/clip.png'); background-repeat: no-repeat; }
 
-.icon-pencil-success { background-image: url('/public/images/icons/png/pencil-success.png'); background-repeat: no-repeat; }
+.icon-clock { background-image: url('/public/images/icons/png/clock.png'); background-repeat: no-repeat; }
 
-.icon-pencil { background-image: url('/public/images/icons/png/pencil.png'); background-repeat: no-repeat; }
+.icon-cloud { background-image: url('/public/images/icons/png/cloud.png'); background-repeat: no-repeat; }
 
-.icon-play-danger { background-image: url('/public/images/icons/png/play-danger.png'); background-repeat: no-repeat; }
+.icon-cup { background-image: url('/public/images/icons/png/cup.png'); background-repeat: no-repeat; }
 
-.icon-play-light { background-image: url('/public/images/icons/png/play-light.png'); background-repeat: no-repeat; }
+.icon-data { background-image: url('/public/images/icons/png/data.png'); background-repeat: no-repeat; }
 
-.icon-play-success { background-image: url('/public/images/icons/png/play-success.png'); background-repeat: no-repeat; }
+.icon-diamond { background-image: url('/public/images/icons/png/diamond.png'); background-repeat: no-repeat; }
 
-.icon-play { background-image: url('/public/images/icons/png/play.png'); background-repeat: no-repeat; }
+.icon-display { background-image: url('/public/images/icons/png/display.png'); background-repeat: no-repeat; }
 
-.icon-points-danger { background-image: url('/public/images/icons/png/points-danger.png'); background-repeat: no-repeat; }
+.icon-eye { background-image: url('/public/images/icons/png/eye.png'); background-repeat: no-repeat; }
 
-.icon-points-light { background-image: url('/public/images/icons/png/points-light.png'); background-repeat: no-repeat; }
+.icon-fire { background-image: url('/public/images/icons/png/fire.png'); background-repeat: no-repeat; }
 
-.icon-points-success { background-image: url('/public/images/icons/png/points-success.png'); background-repeat: no-repeat; }
+.icon-food { background-image: url('/public/images/icons/png/food.png'); background-repeat: no-repeat; }
 
-.icon-points { background-image: url('/public/images/icons/png/points.png'); background-repeat: no-repeat; }
+.icon-heart { background-image: url('/public/images/icons/png/heart.png'); background-repeat: no-repeat; }
 
-.icon-time-danger { background-image: url('/public/images/icons/png/time-danger.png'); background-repeat: no-repeat; }
+.icon-key { background-image: url('/public/images/icons/png/key.png'); background-repeat: no-repeat; }
 
-.icon-time-light { background-image: url('/public/images/icons/png/time-light.png'); background-repeat: no-repeat; }
+.icon-lab { background-image: url('/public/images/icons/png/lab.png'); background-repeat: no-repeat; }
 
-.icon-time-success { background-image: url('/public/images/icons/png/time-success.png'); background-repeat: no-repeat; }
+.icon-like { background-image: url('/public/images/icons/png/like.png'); background-repeat: no-repeat; }
 
-.icon-time { background-image: url('/public/images/icons/png/time.png'); background-repeat: no-repeat; }
+.icon-location { background-image: url('/public/images/icons/png/location.png'); background-repeat: no-repeat; }
 
-.icon-toggle-danger { background-image: url('/public/images/icons/png/toggle-danger.png'); background-repeat: no-repeat; }
+.icon-lock { background-image: url('/public/images/icons/png/lock.png'); background-repeat: no-repeat; }
 
-.icon-toggle-light { background-image: url('/public/images/icons/png/toggle-light.png'); background-repeat: no-repeat; }
+.icon-mail { background-image: url('/public/images/icons/png/mail.png'); background-repeat: no-repeat; }
 
-.icon-toggle-success { background-image: url('/public/images/icons/png/toggle-success.png'); background-repeat: no-repeat; }
+.icon-megaphone { background-image: url('/public/images/icons/png/megaphone.png'); background-repeat: no-repeat; }
 
-.icon-toggle { background-image: url('/public/images/icons/png/toggle.png'); background-repeat: no-repeat; }
+.icon-music { background-image: url('/public/images/icons/png/music.png'); background-repeat: no-repeat; }
 
-.icon-trash-danger { background-image: url('/public/images/icons/png/trash-danger.png'); background-repeat: no-repeat; }
+.icon-news { background-image: url('/public/images/icons/png/news.png'); background-repeat: no-repeat; }
 
-.icon-trash-light { background-image: url('/public/images/icons/png/trash-light.png'); background-repeat: no-repeat; }
+.icon-note { background-image: url('/public/images/icons/png/note.png'); background-repeat: no-repeat; }
 
-.icon-trash-success { background-image: url('/public/images/icons/png/trash-success.png'); background-repeat: no-repeat; }
+.icon-paperplane { background-image: url('/public/images/icons/png/paperplane.png'); background-repeat: no-repeat; }
+
+.icon-params { background-image: url('/public/images/icons/png/params.png'); background-repeat: no-repeat; }
+
+.icon-pen { background-image: url('/public/images/icons/png/pen.png'); background-repeat: no-repeat; }
+
+.icon-phone { background-image: url('/public/images/icons/png/phone.png'); background-repeat: no-repeat; }
+
+.icon-photo { background-image: url('/public/images/icons/png/photo.png'); background-repeat: no-repeat; }
+
+.icon-search { background-image: url('/public/images/icons/png/search.png'); background-repeat: no-repeat; }
+
+.icon-settings { background-image: url('/public/images/icons/png/settings.png'); background-repeat: no-repeat; }
+
+.icon-shop { background-image: url('/public/images/icons/png/shop.png'); background-repeat: no-repeat; }
+
+.icon-sound { background-image: url('/public/images/icons/png/sound.png'); background-repeat: no-repeat; }
+
+.icon-stack { background-image: url('/public/images/icons/png/stack.png'); background-repeat: no-repeat; }
+
+.icon-star { background-image: url('/public/images/icons/png/star.png'); background-repeat: no-repeat; }
+
+.icon-study { background-image: url('/public/images/icons/png/study.png'); background-repeat: no-repeat; }
+
+.icon-t-shirt { background-image: url('/public/images/icons/png/t-shirt.png'); background-repeat: no-repeat; }
+
+.icon-tag { background-image: url('/public/images/icons/png/tag.png'); background-repeat: no-repeat; }
 
 .icon-trash { background-image: url('/public/images/icons/png/trash.png'); background-repeat: no-repeat; }
+
+.icon-truck { background-image: url('/public/images/icons/png/truck.png'); background-repeat: no-repeat; }
+
+.icon-tv { background-image: url('/public/images/icons/png/tv.png'); background-repeat: no-repeat; }
+
+.icon-user { background-image: url('/public/images/icons/png/user.png'); background-repeat: no-repeat; }
+
+.icon-video { background-image: url('/public/images/icons/png/video.png'); background-repeat: no-repeat; }
+
+.icon-vynil { background-image: url('/public/images/icons/png/vynil.png'); background-repeat: no-repeat; }
+
+.icon-wallet { background-image: url('/public/images/icons/png/wallet.png'); background-repeat: no-repeat; }
+
+.icon-world { background-image: url('/public/images/icons/png/world.png'); background-repeat: no-repeat; }
 

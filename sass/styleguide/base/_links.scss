@@ -8,14 +8,15 @@ Links styles.
 */
 
 a {
-  
+
   color: $base-color;
   cursor: pointer;
-  
-  &, &:visited, &:link {
-    text-decoration: none;
-  }
-  
+
+
+  // &, &:visited {
+  //   text-decoration: none;
+  // }
+
   &:hover {
     text-decoration: underline;
   }

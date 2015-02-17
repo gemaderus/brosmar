@@ -5,19 +5,9 @@
     color: darken($socialbro, 30%);
 }
 
-.st-h2, .st-h3 {
-    margin-top: 1em;
-    margin-bottom: 16px;
-}
-
-.st-h2 {
-    color: $socialbro;
-    font-size: 2.2rem;
-}
-
-.st-h3 {
-    color: $socialbro;
-    font-size: 2rem;
+.margin-top-bottom {
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
 }
 
 .st-task-list {
@@ -32,4 +22,15 @@
 
 .st-task-list + .st-p {
     margin-top: 1.6rem;
+}
+
+.st-code {
+    padding: 0.2rem 0.4rem;
+    color: $error;
+    background-color: $black-grounds;
+    border-radius: 4px;
+}
+
+.st-a {
+    text-decoration: underline;
 }

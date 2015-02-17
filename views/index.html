@@ -26,89 +26,108 @@
 {% endblock %}
 
 {% block content_right %}
-<div class="st-content-pills">
-    <h2>Button (Primary)</h2>
-    <p>Primary buttons are only used when there is an exceedingly distinct and clear call-to-action. An example of this is the Vote button on a poll, or a Send button on the comment publisher.</p>
-    <div class="st-container-component">
-        <h4>default</h4>
-        <div class="st-component">
-            <span>Primary Button</span>
-        </div>
-    </div>
-
-    <div class="st-mark-up">
-        <pre>
-            <code>
-                <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn bg-primary-btn btn--primary pvs size-full brm no-border"</span>&gt;</span>
-                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"text-color-5 f3 fw-semibold"</span>&gt;</span><span class="variable">Primary Button</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-                <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
-            </code>
-        </pre>
-    </div>
+<div class="tipography-introduction">
+    <h2 class="st-h2">Tipography</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus officia sed maxime ex itaque quod ducimus consequatur aspernatur qui non, eaque molestiae ipsum iste, veniam possimus voluptatibus ab ratione.</p>
 </div>
+<ul class="tipography-items">
+    <li class="tipography-item">
+        <p class="large">h1 30px bold</p>
+        <h1>water under the bridge</h1>
+    </li>
+    <li class="tipography-item">
+        <p class="large">h2 20px bold</p>
+        <h2>water under the bridge</h2>
+    </li>
+    <li class="tipography-item">
+        <p class="large">h3 20px normal</p>
+        <h3>water under the bridge</h3>
+    </li>
+    <li class="tipography-item">
+        <p class="large">p 14px normal</p>
+        <p class="p-large">water under the bridge</p>
+    </li>
+    <li class="tipography-item">
+        <p class="large">p 12px small</p>
+        <p class="p-small">water under the bridge</p>
+    </li>
+    <li class="tipography-item">
+        <p class="large">span 12px normal</p>
+        <span>water under the bridge</span>
+    </li>
+    <li class="tipography-item">
+        <p class="large">link any normal</p>
+        <a href="#">water under the bridge</a>
+    </li>
+    <li class="tipography-item">
+        <p class="large">label 13px normal</p>
+        <label>water under the bridge</label>
+    </li>
+</ul>
+
 {% endblock %}
 
 {% block st_samples %}
 <div class="st-content-pills">
-    <h2>Colours</h2>
+    <h2 class="st-h2">Colours</h2>
     <ul class="st-samples">
         <li class="st-sample st-socialbro">
             <div class="st-sample-details">
-              <h6>socialbro</h6>
+              <h6 class="st-h6">socialbro</h6>
               <span>#26B7C2</span>
             </div>
         </li>
         <li class="st-sample st-service">
             <div class="st-sample-details">
-                <h6>service</h6>
+                <h6 class="st-h6">service</h6>
                 <span>#009EE1</span>
             </div>
         </li>
         <li class="st-sample st-error">
             <div class="st-sample-details">
-                <h6>error</h6>
+                <h6 class="st-h6">error</h6>
                 <span>#C60E32</span>
             </div>
         </li>
         <li class="st-sample st-succeed">
             <div class="st-sample-details">
-                <h6>succeed</h6>
+                <h6 class="st-h6">succeed</h6>
                 <span>#6AB624</span>
             </div>
         </li>
         <li class="st-sample st-primary">
             <div class="st-sample-details">
-                <h6>primary</h6>
+                <h6 class="st-h6">primary</h6>
                 <span>#F18B46</span>
             </div>
         </li>
         <li class="st-sample st-black">
             <div class="st-sample-details">
-                <h6>main titles</h6>
+                <h6 class="st-h6">main titles</h6>
                 <span>#000000</span>
             </div>
         </li>
         <li class="st-sample st-titles">
             <div class="st-sample-details">
-                <h6>support titles</h6>
+                <h6 class="st-h6">support titles</h6>
                 <span>#804997</span>
             </div>
         </li>
         <li class="st-sample st-common-text">
             <div class="st-sample-details">
-                <h6>common text</h6>
+                <h6 class="st-h6">common text</h6>
                 <span>#565656</span>
             </div>
         </li>
         <li class="st-sample st-support-tex">
             <div class="st-sample-details">
-                <h6>support text</h6>
+                <h6 class="st-h6">support text</h6>
                 <span>#B1B1B1</span>
             </div>
         </li>
         <li class="st-sample st-blackgrounds">
             <div class="st-sample-details">
-                <h6>blackgrounds</h6>
+                <h6 class="st-h6">blackgrounds</h6>
                 <span>#F2F2F2</span>
             </div>
         </li>
@@ -124,4 +143,38 @@
     </div>
 </div>
 {% endblock %}
+
+<!-- {% block st_icons_svg %}
+<div class="st-content-pills">
+    <h2>Icons</h2>
+    <ul class="st-icons">
+      <li class="st-icons-item">
+        <i class="icon-small icon-banknote"></i>
+      </li>
+      <li class="st-icons-item">
+        <i class="icon-medium icon-banknote"></i>
+      </li>
+      <li class="st-icons-item">
+        <i class="icon-large icon-banknote"></i>
+      </li>
+      <li class="st-icons-item">
+        <span></span>
+      </li>
+      <li class="st-icons-item">
+        <span></span>
+      </li>
+      <li class="st-icons-item">
+        <span></span>
+      </li>
+      <li class="st-icons-item">
+        <span></span>
+      </li>
+      <li class="st-icons-item">
+        <span></span>
+      </li>
+    </ul>
+</div>
+
+{% endblock %}
+ -->
 

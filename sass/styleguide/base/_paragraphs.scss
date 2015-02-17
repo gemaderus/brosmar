@@ -11,6 +11,18 @@ p {
   margin: 0;
 }
 
-p + p {
-  margin-top: 1rem;
+// p + p {
+//   margin-top: 1rem;
+// }
+
+.p-large {
+    font-size: 1.4rem;
 }
+
+.p-small {
+    font-size: 12px;
+}
+
+// <p>p 14px normal</p>
+// <p>p 12px normal</p>
+

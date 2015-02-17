@@ -34,18 +34,22 @@ body {
     display: none;
     content: 'small';
   }
-  
-  @include min-screen(480px) { 
+
+  @include min-screen(480px) {
     &:before {
       display: none;
       content: 'tablet';
     }
   }
 
-  @include min-screen(800px) { 
+  @include min-screen(800px) {
     &:before {
       display: none;
       content: 'desktop';
     }
   }
+}
+
+span {
+    font-size: 12px;
 }

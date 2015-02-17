@@ -11,29 +11,30 @@
 
 .st-content-pills > p {
     font-weight: 300;
-    color: #647687;
+    color: $common-text;
     margin: 0;
 }
 
-.st-content-pills > h2, 
+.st-content-pills > h2,
 .st-content-pills > p {
     padding: 1.4rem 1.8rem;
     background-color: $white;
 }
 
-.st-content-pills > h2, 
-.st-content-pills > p, 
+.st-content-pills > h2,
+.st-content-pills > p,
 .container-component {
     border-bottom: 1px solid $border;
 }
 
 .st-container-component {
     background-color: $gray-light;
-    padding: 1.5rem 2rem;
+    padding: 2rem;
 }
 
 .st-container-component > h4 {
     margin: 0;
+    margin-bottom: 2rem;
     text-transform: uppercase;
     display: block;
 }
