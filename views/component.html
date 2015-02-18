@@ -2,42 +2,48 @@
 
 {% block content_left %}
 <ul class="st-content-left">
-    <li class="st-content-left-item"><a href="#" class="bold">Button</a></li>
-    <li class="st-content-left-item"><a href="#" class="bold">Tabs</a></li>
-    <li class="st-content-left-item"><a href="#" class="bold">Paginación</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Button</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Tabs</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Paginación</a></li>
 </ul>
 
 {% endblock %}
 
 {% block content_right %}
 <div class="st-content-pills">
-    <h2 class="st-h2">Button (Primary)</h2>
-    <p>Primary buttons are only used when there is an exceedingly distinct and clear call-to-action. An example of this is the Vote button on a poll, or a Send button on the comment publisher.</p>
+    <h2 class="st-h2">Pagination</h2>
+    <p class="st-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed perferendis dignissimos laudantium, quae vel commodi. Aperiam animi laudantium provident hic quia incidunt rem doloribus vitae, tempore libero. Provident, tempore, ab!</p>
     <div class="st-container-component">
-        <h4 class="st-h4">default</h4>
-        <div class="st-component">
-            <span>Primary Button</span>
-        </div>
+        <h4 class="st-h4">pagination</h4>
+        <ul class="pagination">
+            <li class="pagination-item"><a class="pagination-prev" href="#">prev</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+            <li class="pagination-item"><a class="pagination-link is-active" href="#">3</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+            <li class="pagination-item"><a class="pagination-next" href="#">next</a></li>
+        </ul>
     </div>
-    <div class="st-mark-up">
-        <pre>
-            <code>
-                <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn bg-primary-btn btn--primary pvs size-full brm no-border"</span>&gt;</span>
-                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"text-color-5 f3 fw-semibold"</span>&gt;</span><span class="variable">Primary Button</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-                <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
-            </code>
-        </pre>
-    </div>
+<pre><code class="language-markup">
+<ul class="pagination">
+  <li class="pagination-item"><a class="pagination-prev" href="#">prev</a></li>
+  <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
+  <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+  <li class="pagination-item"><a class="pagination-link is-active" href="#">3</a></li>
+  <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+  <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+  <li class="pagination-item"><a class="pagination-next" href="#">next</a></li>
+</ul>
+</code></pre>
 </div>
-{% endblock %}
 
-{% block st_tabs %}
 <div class="st-content-pills">
     <h2 class="st-h2">Tabs</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eveniet dicta accusamus. Similique, ut labore molestiae molestias, non blanditiis ea hic facere nesciunt minima neque dicta. Repellat laudantium modi blanditiis.</p>
+    <p class="st-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eveniet dicta accusamus. Similique, ut labore molestiae molestias, non blanditiis ea hic facere nesciunt minima neque dicta. Repellat laudantium modi blanditiis.</p>
     <div class="st-container-component">
         <h4 class="st-h4">Tabs: by default is a block</h4>
-        <div class="sb-tabs eighty percent">
+        <div class="sb-tabs eighty percent mx-auto">
             <ul class="sb-tabs-group">
                 <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
                 <li class="sb-tab"><a href="#/two">Sexy</a></li>
@@ -48,18 +54,21 @@
             </div>
         </div>
     </div>
-    <div class="st-mark-up">
-        <pre>
-            <code>
-                <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn bg-primary-btn btn--primary pvs size-full brm no-border"</span>&gt;</span>
-                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"text-color-5 f3 fw-semibold"</span>&gt;</span><span class="variable">Primary Button</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-                <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
-            </code>
-        </pre>
-    </div>
+<pre><code class="language-markup">
+<div class="sb-tabs eighty percent mx-auto">
+  <ul class="sb-tabs-group">
+    <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
+    <li class="sb-tab"><a href="#/two">Sexy</a></li>
+    <li class="sb-tab"><a href="#/three">Tabs</a></li>
+  </ul>
+  <div class="sb-tabs-content">
+    Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur. Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq. Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq.
+  </div>
+</div>
+</code></pre>
     <div class="st-container-component">
         <h4>Tabs block bottom, with align text center</h4>
-        <div class="sb-tabs sb-tabs--block-bottom eighty percent">
+        <div class="sb-tabs sb-tabs--block-bottom eighty percent mx-auto">
             <div class="sb-tabs-content">
                 Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur. Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq. Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq.
             </div>
@@ -81,7 +90,7 @@
     </div>
     <div class="st-container-component">
         <h4>Tabs block on left</h4>
-        <div class="sb-tabs sb-tabs--block-left eighty percent">
+        <div class="sb-tabs sb-tabs--block-left eighty percent mx-auto">
             <ul class="sb-tabs-group">
                 <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
                 <li class="sb-tab"><a href="#/two">Sexy</a></li>
@@ -104,7 +113,7 @@
     </div>
     <div class="st-container-component">
         <h4>Tabs block on right</h4>
-        <div class="sb-tabs sb-tabs--block-right eighty percent">
+        <div class="sb-tabs sb-tabs--block-right eighty percent mx-auto">
             <ul class="sb-tabs-group">
                 <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
                 <li class="sb-tab"><a href="#/two">Sexy</a></li>
@@ -118,7 +127,7 @@
     </div>
     <div class="st-mark-up">
         <pre>
-            <code>
+            <code class="language-markup">
                 <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn bg-primary-btn btn--primary pvs size-full brm no-border"</span>&gt;</span>
                 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"text-color-5 f3 fw-semibold"</span>&gt;</span><span class="variable">Primary Button</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
                 <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
@@ -127,7 +136,7 @@
     </div>
     <div class="st-container-component">
         <h4>Tabs on left</h4>
-        <div class="sb-tabs sb-tabs--left eighty percent">
+        <div class="sb-tabs sb-tabs--left eighty percent mx-auto">
             <ul class="sb-tabs-group">
                 <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
                 <li class="sb-tab"><a href="#/two">Sexy</a></li>
@@ -150,32 +159,3 @@
     </div>
 </div>
 {% endblock %}
-
-{% block content_right %}
-<div class="st-content-pills">
-    <h2 class="st-h2">Pagination</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed perferendis dignissimos laudantium, quae vel commodi. Aperiam animi laudantium provident hic quia incidunt rem doloribus vitae, tempore libero. Provident, tempore, ab!</p>
-    <div class="st-container-component">
-        <h4 class="st-h4">pagination</h4>
-        <ul class="pagination-items">
-            <li class="pagination-item pagination-item-large prev"><a href="#">prev</a></li>
-            <li class="pagination-item"><a href="#">1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">4</a></li>
-            <li class="pagination-item"><a href="#">5</a></li>
-            <li class="pagination-item pagination-item-large next"><a href="#">next</a></li>
-        </ul>
-    </div>
-    <div class="st-mark-up">
-        <pre>
-            <code>
-                <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn bg-primary-btn btn--primary pvs size-full brm no-border"</span>&gt;</span>
-                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"text-color-5 f3 fw-semibold"</span>&gt;</span><span class="variable">Primary Button</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-                <span class="tag">&lt;/<span class="title">button</span>&gt;</span>
-            </code>
-        </pre>
-    </div>
-</div>
-{% endblock %}
-

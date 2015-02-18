@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/stylesheets/sandbox.css" />
     <link rel="stylesheet" href="/stylesheets/main.css" />
+    <link rel="stylesheet" href="/stylesheets/prism.css">
     <script src='//localhost:35729/livereload.js'></script>
 
   </head>
@@ -23,7 +24,7 @@
           <input type="checkbox" id="toggler" class="st-toggler__input"/>
           <div class="st-navigation">
               <div class="st-logo">
-                  <a href="#">Styleguide</a>
+                  <a class="st-a" href="#">Styleguide</a>
               </div>
               <div class="st-toggler__menu">
                   <label for="toggler" class="st-toggler__label st-menu--header">Menu</label>
@@ -32,9 +33,9 @@
           </div>
           <div class="st-toggler__content">
               <ul class="st-toggler__navigation">
-                  <li class="st-toggler__items"><a href="#">CALENDAR</a></li>
-                  <li class="st-toggler__items"><a href="#">CONTACTS</a></li>
-                  <li class="st-toggler__items"><a href="#">HELP</a></li>
+                  <li class="st-toggler__items"><a class="st-a" href="#">CSS</a></li>
+                  <li class="st-toggler__items"><a class="st-a" href="#">COMPONENTS</a></li>
+                  <li class="st-toggler__items"><a class="st-a" href="#">LAYOUT</a></li>
               </ul>
           </div>
       </div>
@@ -64,9 +65,11 @@
     </div>
 
     <div class="st-footer">
-      <span>© Copyright 2014 SocialBro.</span>
+      <span class="st-span">© Copyright 2014 SocialBro.</span>
     </div>
 
+    <script src="/javascript/prism.js" data-manual></script>
     <script src="/javascript/main.js"></script>
+
   </body>
 </html>

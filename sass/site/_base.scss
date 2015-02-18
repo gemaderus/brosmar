@@ -1,33 +1,59 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-family: 'Open Sans';
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
 .st-content {
-    padding: 2rem 1rem;
-    margin: 10px auto;
     @extend .clearfix;
     height: auto;
+    margin: 10px auto;
     min-height: 100%;
+    padding: 2rem 1rem;
     width: 100%;
 }
 
-// .st-content:after {
-//     width: 100%;
-//     height: 60px;
-//     display: block;
-//     clear: both;
-// }
+.st-p,
+.st-task-list {
+    font-family: 'Open Sans';
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: darken($socialbro, 30%);
+}
+
+.margin-top-bottom {
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
+}
+
+.st-task-list {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.st-p + .st-task-list {
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+}
+
+.st-p + .st-p {
+    margin-top: 1.6rem;
+}
+
+.st-p.leading {
+    font-size: 2rem;
+}
+
+.st-task-list + .st-p {
+    margin-top: 1.6rem;
+}
+
+.st-code {
+    padding: 0.2rem 0.4rem;
+    color: $error;
+    background-color: $black-grounds;
+    border-radius: 4px;
+}
+
+.st-a {
+    font-family: 'Open Sans';
+    text-decoration: none;
+}
+
+.st-span {
+    font-family: 'Open Sans';
+}

@@ -30,17 +30,18 @@ This library is divided in the following sections:
 /* 1. Reset */
 
 @import "base/normalize";
-@import "base/headings";
 
 /* 2. Generic */
 
 @import "generic/settings";
+@import "generic/functions";
 @import "generic/mixins";
 
 /* 3. Helpers */
 
 @import "helpers/align";
 @import "helpers/clearfix";
+@import "helpers/percent";
 @import "helpers/float";
 @import "helpers/is-hidden";
 @import "helpers/no-scroll";
@@ -53,6 +54,7 @@ This library is divided in the following sections:
 @import "base/lists";
 @import "base/headings";
 @import "base/links";
+@import "base/label";
 @import "base/paragraphs";
 @import "base/tipography";
 
