@@ -1,0 +1,259 @@
+/*
+
+Navigation menu
+---------------
+
+Navigation usually means list of links. And we have some flavours using distinct styles.
+
+*/
+
+.sb-tabs-container {
+    padding: 3rem 1.8rem;
+}
+
+.sb-tabs-container h3 {
+    margin-bottom: 2rem;
+}
+
+.sb-tabs {
+    margin-bottom: 2rem;
+}
+
+.sb-tabs:last-child {
+    margin-bottom: 0;
+}
+
+/* By default, tabs component is full width */
+.sb-tabs-group {
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 2px 4px $border;
+    display: table;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.sb-tab {
+    background-color: #f7f7f7;
+    border-top: 1px solid $border;
+    display: table-cell;
+    position: relative;
+
+    a {
+        color: $common-text;
+    }
+}
+
+.sb-tab-active {
+    background-color: $white;
+    position: relative;
+    z-index: 1;
+}
+
+.sb-tab-active:after {
+    background-color: $white;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: calc(100% - 1px);
+    width: 100%;
+    z-index: 2;
+}
+
+.sb-tab a {
+    display: block;
+    padding: 1em;
+}
+
+.sb-tab:first-child {
+    border-left: 1px solid $border;
+    border-top-left-radius: 4px;
+}
+
+.sb-tab:last-child {
+    border-right: 1px solid $border;
+    border-top-right-radius: 4px;
+}
+
+.sb-tab + .sb-tab {
+    border-left: 1px solid $border;
+}
+
+.sb-tabs-content {
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid $border;
+    box-shadow: 0 2px 4px $border;
+    padding: 1em;
+    position: relative;
+    z-index: 0;
+    color: $common-text;
+}
+
+/* Tabs block bottom */
+.sb-tabs--block-bottom .sb-tabs-group {
+    border-radius: 0 0 4px 4px;
+}
+
+.sb-tabs--block-bottom .sb-tab {
+    border-top: 0;
+    border-bottom: 1px solid $border;
+}
+.sb-tabs--block-bottom .sb-tab:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 4px;
+}
+
+.sb-tabs--block-bottom .sb-tab:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+}
+
+.sb-tabs--block-bottom .sb-tab-active:after {
+    bottom: calc(100% - 1px);
+    top: auto;
+}
+
+.sb-tabs--block-bottom .sb-tabs-content {
+    border-radius: 4px 4px 0 0;
+}
+
+/* Tabs block left */
+.sb-tabs--block-left .sb-tabs-group,
+.sb-tabs--block-right .sb-tabs-group {
+    float: left;
+    display: block;
+    width: auto;
+}
+
+.sb-tabs--block-left .sb-tabs-group:after,
+.sb-tabs--block-left .sb-tabs-group:before,
+.sb-tabs--block-right .sb-tabs-group:after,
+.sb-tabs--block-right .sb-tabs-group:before {
+    content: '';
+    display: table;
+}
+
+.sb-tabs--block-left .sb-tabs-group:after,
+.sb-tabs--block-right .sb-tabs-group:after {
+    clear: both;
+}
+
+.sb-tabs--block-left .sb-tab,
+.sb-tabs--block-right .sb-tab {
+    display: block;
+    float: left;
+}
+
+.sb-tabs--block-left .sb-tabs-content {
+    border-radius: 0 4px 4px 4px;
+    clear: left;
+}
+
+/* Tabs block right */
+.sb-tabs--block-right .sb-tabs-group {
+    float: right;
+}
+
+.sb-tabs--block-right .sb-tabs-content {
+    border-radius: 4px 0 4px 4px;
+    clear: right;
+}
+
+/* Tabs left */
+
+.sb-tabs--left:after,
+.sb-tabs--left:before,
+.sb-tabs--right:after,
+.sb-tabs--right:before {
+    content: '';
+    display: table;
+}
+
+.sb-tabs--left:after,
+.sb-tabs--right:after {
+    clear: both;
+}
+
+.sb-tabs--left .sb-tabs-group,
+.sb-tabs--right .sb-tabs-group {
+    display: block;
+    width: auto;
+}
+
+.sb-tabs--left .sb-tabs-group {
+    border-radius: 4px 0 0 4px;
+    float: left;
+}
+
+.sb-tabs--left .sb-tabs-content,
+.sb-tabs--right .sb-tabs-content {
+    overflow: auto;
+}
+
+.sb-tabs--left .sb-tab,
+.sb-tabs--right .sb-tab {
+    display: block;
+}
+
+.sb-tabs--left .sb-tab {
+    border-left: 1px solid $border;
+}
+
+.sb-tabs--left .sb-tab:last-child {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+}
+
+.sb-tabs--left .sb-tab + .sb-tab {
+    border-top: 1px solid $border;
+    border-right: 0;
+}
+
+.sb-tabs--left .sb-tab-active:after {
+    height: 100%;
+    left: 100%;
+    top: 0;
+    width: 2px;
+}
+
+.sb-tabs--left .sb-tabs-content {
+    border-radius: 0 4px 4px 4px;
+}
+
+/* Tabs right */
+
+.sb-tabs--right .sb-tabs-group {
+    border-radius: 0 4px 4px 0;
+    float: right;
+}
+
+.sb-tabs--right .sb-tab {
+    border-right: 1px solid $border;
+}
+
+.sb-tabs--right .sb-tab-active:after {
+    height: 100%;
+    left: -1px;
+    top: 0;
+    width: 2px;
+}
+
+.sb-tabs--right .sb-tab:first-child {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 4px;
+}
+
+.sb-tabs--right .sb-tab:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+}
+
+.sb-tabs--right .sb-tabs-content {
+    border-radius: 4px 0 4px 4px;
+}

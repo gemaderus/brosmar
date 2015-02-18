@@ -3,3 +3,4 @@
 /node_modules/*
 /public/javascripts/vendor/*
 /public/stylesheets/*
+/assets/svg/compressed/*

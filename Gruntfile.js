@@ -56,12 +56,12 @@ module.exports = function(grunt) {
         }
       },
 
-      js: {
-        files: ['javascripts/**/*.js'],
-        options: {
-          livereload: true,
-        }
-      }
+      // js: {
+      //   files: ['javascripts/**/*.js'],
+      //   options: {
+      //     livereload: true,
+      //   }
+      // }
 
     },
 
@@ -90,7 +90,21 @@ module.exports = function(grunt) {
 
     clean: ['assets/svg/compressed', 'assets/svg/output'],
 
-    svgmin: { //minimize SVG files
+    svgstore: {
+      options: {
+        prefix : 'icon-',
+        svg: {
+          style: "display: none;"
+        }
+      },
+      default : {
+        files: {
+          "assets/sandbox.svg": ["assets/svg/compressed/*.svg"]
+        }
+      }
+    },
+
+    svgmin: {
       options: {
         plugins: [
           { removeViewBox: false },
@@ -102,39 +116,18 @@ module.exports = function(grunt) {
         cwd: 'assets/svg',
         src: ['*.svg'],
         dest: 'assets/svg/compressed'
-        //ext: '.colors-light-danger-success.svg'
-      }
-    },
-
-    grunticon: { //makes SVG icons into a CSS file
-      myIcons: {
-        files: [{
-          expand: true,
-          cwd: 'assets/svg/compressed',
-          src: ['*.svg'],
-          dest: 'assets/svg/output'
-        }],
-        options: {
-          cssprefix: '.icon-',
-          colors: {
-            light: '#ccc',
-            danger: '#ed3921',
-            success: '#8DC63F'
-          },
-          pngpath: "/public/images/icons/png"
-        }
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-spritesmith');
-  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-svgmin');
-  grunt.loadNpmTasks('grunt-grunticon');
+  grunt.loadNpmTasks('grunt-svgstore');
 
   grunt.registerTask('express', 'Start a custom web server', function() {
       grunt.log.writeln('Started web server on port 3000');
@@ -154,6 +147,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['help']);
   grunt.registerTask('build', ['sass:dist', 'autoprefixer']);
   grunt.registerTask('sprites', ['sprite']);
-  grunt.registerTask('svg', ['clean', 'svgmin', 'grunticon']);
+  grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore']);
   grunt.registerTask('server', ['sass:dev', 'autoprefixer', 'express', 'open:dev', 'watch']);
 }

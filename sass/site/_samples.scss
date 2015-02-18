@@ -1,0 +1,94 @@
+.st-sample-details p {
+  margin: 0;
+}
+
+.st-sample-details h6 {
+    text-transform: uppercase;
+}
+
+.st-samples {
+  padding: 3rem 1.8rem;
+  text-align: justify;
+}
+
+.st-sample {
+  background-color: white;
+  padding-top: 15rem;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 18rem;
+  display: inline-block;
+  margin-bottom: 1.8rem;
+  border: 1px solid $border;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.st-sample-small {
+  padding-top: 8rem;
+  width: 11rem;
+}
+
+.st-sample-details {
+    text-transform: uppercase;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    color: $gray-dark;
+    padding: 1rem;
+    text-align: center;
+}
+
+.st-socialbro {
+    background-color: $socialbro;
+}
+
+.st-service {
+    background-color: $service;
+}
+
+.st-error {
+    background-color: $error;
+}
+
+.st-succeed {
+    background-color: $succeed;
+}
+
+.st-primary {
+    background-color: $primary;
+}
+
+.st-black {
+    background-color: $black;
+}
+
+.st-titles {
+    background-color: $titles;
+}
+
+.st-common-text {
+    background-color: $common-text;
+}
+
+.st-support-tex {
+    background-color: $support-text;
+}
+
+.st-blackgrounds {
+    background-color: $black-grounds;
+}
+
+.st-container-definition {
+    width: 51.5rem;
+    margin: auto;
+    background-color: $black-grounds;
+}
+
+.st-container-definition > p {
+    margin: 130px 0 30px 0;
+    color: $gray;
+    font-size: 1.4rem;
+    text-align: center;
+}

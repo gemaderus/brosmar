@@ -5,14 +5,14 @@ Sandbox
 
 This library is divided in the following sections:
 
-1.  Reset removes all the default styles on the page to start building using 
+1.  Reset removes all the default styles on the page to start building using
     normalize.
 
-2.  Generic parts that load variables, functions and mixins. Use this 
-    folder for code that is applied all over the app but it is not 
+2.  Generic parts that load variables, functions and mixins. Use this
+    folder for code that is applied all over the app but it is not
     specific to a base element or an object.
 
-3.  Helpers and useful chunks of code that do not fit in an object and 
+3.  Helpers and useful chunks of code that do not fit in an object and
     it is generic enough. If possible, create objects.
 
 4.  Base elements are the building blocks of the page. Paragraphs, lists,
@@ -22,7 +22,7 @@ This library is divided in the following sections:
 
 6.  Layout styles like background colors or images, usually they are refered as sections inside the dom html.
 
-7.  Vendor is code that other Javascript libraries use and do not tend 
+7.  Vendor is code that other Javascript libraries use and do not tend
     to follow the OOCSS approach.
 
 */
@@ -34,12 +34,14 @@ This library is divided in the following sections:
 /* 2. Generic */
 
 @import "generic/settings";
+@import "generic/functions";
 @import "generic/mixins";
 
 /* 3. Helpers */
 
 @import "helpers/align";
 @import "helpers/clearfix";
+@import "helpers/percent";
 @import "helpers/float";
 @import "helpers/is-hidden";
 @import "helpers/no-scroll";
@@ -52,7 +54,9 @@ This library is divided in the following sections:
 @import "base/lists";
 @import "base/headings";
 @import "base/links";
+@import "base/label";
 @import "base/paragraphs";
+@import "base/tipography";
 
 /* 5. Objects */
 
@@ -62,8 +66,11 @@ This library is divided in the following sections:
 @import "objects/nav";
 @import "objects/button";
 @import "objects/icons";
+@import "objects/svg";
 @import "objects/media";
 @import "objects/justify-columns";
+@import "objects/tabs";
+@import "objects/pagination";
 
 /* 6. Layout */
 
