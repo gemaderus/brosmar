@@ -9,8 +9,9 @@ Links styles.
 
 a {
 
-  color: $base-color;
+  color: $common-text;
   cursor: pointer;
+  text-decoration: none;
 
 
   // &, &:visited {

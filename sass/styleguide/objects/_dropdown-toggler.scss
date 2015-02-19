@@ -1,11 +1,21 @@
 .dropdown-toggler {
+    display: inline-block;
+    border: 1px solid $black-grounds;
+    background-color: $white;
+    padding: 0 0.4rem;
+    position: absolute;
+    top: 0;
+    left: 90%;
+}
+
+.dropdown-toggler:before {
+    content: '';
+    display: inline-block;
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid gray;
-    position: absolute;
-    top: 15%;
-    left: 100%;
+    cursor: pointer;
 }
 
