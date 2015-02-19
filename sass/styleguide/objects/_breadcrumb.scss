@@ -37,6 +37,7 @@
     position: relative;
     background-color: $black-grounds;
     padding-left: 4rem;
+    margin-right: 2.1rem;
 
     &:first-child {
     padding-left: 2rem;
@@ -49,9 +50,11 @@
     display: inline-block;
     position: absolute;
     top: 0;
-    border-top: 2rem solid transparent;
-    border-bottom: 2rem solid transparent;
-    border-left: 1.2rem solid;
+    // border-top: 2rem solid transparent;
+    // border-bottom: 2rem solid transparent;
+    // border-left: 1.2rem solid;
+    border: 0 solid gray;
+    border-width: 20px 10px;
 }
 
 .breadcrumb-simple-item:after {
@@ -60,7 +63,7 @@
 }
 
 .breadcrumb-simple-item:before {
-    border-left-color: red; //#ccc;
+    border-left-color: blue; //#ccc;
     right: 100%;
 }
 
@@ -82,9 +85,9 @@
     padding: 2rem 3rem;
 }
 
-.breadcrumb-simple-item.large:after,
-.breadcrumb-simple-item.large:before {
-    border-top: 4.3rem solid transparent;
-    border-bottom: 4.3rem solid transparent;
-    border-left: 2rem solid;
-}
+// .breadcrumb-simple-item.large:after,
+// .breadcrumb-simple-item.large:before {
+//     border-top: 4.3rem solid transparent;
+//     border-bottom: 4.3rem solid transparent;
+//     border-left: 2rem solid;
+// }
