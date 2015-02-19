@@ -22,3 +22,13 @@ Utility class to align inline and inline-blocks elements.
 .align-left {
   text-align: left;
 }
+
+.align-justify {
+    text-align: justify;
+
+    &:after {
+        display: inline-block;
+        content: '';
+        width: 100%;
+    }
+}

@@ -1,13 +1,12 @@
 // BASE
 
-// @import "normalise";
 @import "mixins";
 @import "../styleguide/generic/settings";
 @import "fonts";
 @import "colors";
 @import "heading";
-@import "base";
-@import "helper";
+
+
 
 
 // COMPONENT
@@ -23,16 +22,22 @@
 
 
 // HELPER
-@import "clearfix";
+
+@import "helpers/bold";
+@import "helpers/st-container";
+@import "helpers/margin-top-bottom";
+@import "../styleguide/helpers/clearfix";
+@import "../styleguide/helpers/align";
 
 // Syntax Highlight
 @import "prism";
 
 // LAYOUT
 @import "header";
-@import "content-menu-left";
-@import "content-menu-right";
+@import "home";
+@import "content";
 @import "samples";
+@import "icons";
 @import "footer";
 // @import "content";
 // @import 'media';

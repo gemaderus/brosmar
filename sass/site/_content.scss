@@ -1,3 +1,36 @@
+.st-content {
+    @extend .clearfix;
+    height: auto;
+    margin: 10px auto;
+    min-height: 100%;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.st-content-left {
+    display: none;
+}
+
+.st-content-left-item {
+    font-size: 1.2rem;
+    @include rem(margin-bottom, 0.5);
+
+    a {
+        color: $blue-dark;
+
+      &:hover {
+        color: lighten($blue-dark, 20%);
+      }
+    } 
+}
+
+@media all and (min-width: 769px) {
+    .st-content-left {
+        display: block;
+        position: fixed;
+    }
+}
+
 .st-content-pills {
     display: block;
     border: 1px solid $gray;

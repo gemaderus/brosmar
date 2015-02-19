@@ -1,23 +1,9 @@
-.st-content {
-    @extend .clearfix;
-    height: auto;
-    margin: 10px auto;
-    min-height: 100%;
-    padding: 2rem 1rem;
-    width: 100%;
-}
-
 .st-p,
 .st-task-list {
     font-family: 'Open Sans';
     font-size: 1.4rem;
     line-height: 1.6;
     color: darken($socialbro, 30%);
-}
-
-.margin-top-bottom {
-    margin-top: 1rem;
-    margin-bottom: 1.6rem;
 }
 
 .st-task-list {
