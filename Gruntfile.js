@@ -88,11 +88,12 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['assets/svg/compressed', 'assets/svg/output'],
+    clean: ['assets/sandbox.svg', 'assets/svg/compressed', 'assets/svg/output'],
 
     svgstore: {
       options: {
         prefix : 'icon-',
+        cleanup: ['fill','stroke'],
         svg: {
           style: "display: none;"
         }
