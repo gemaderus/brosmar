@@ -9,16 +9,11 @@ Links styles.
 
 a {
 
-  color: $common-text;
-  cursor: pointer;
-  text-decoration: none;
+    color: $base-color;
+    cursor: pointer;
+    text-decoration: none;
 
-
-  // &, &:visited {
-  //   text-decoration: none;
-  // }
-
-  &:hover {
-    text-decoration: underline;
-  }
+    &:hover {
+        text-decoration: underline;
+    }
 }

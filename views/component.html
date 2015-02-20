@@ -152,44 +152,59 @@
 <div class="st-content-pills">
     <h2 class="st-h2">Breadcrumb</h2>
     <p class="st-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed perferendis dignissimos laudantium, quae vel commodi. Aperiam animi laudantium provident hic quia incidunt rem doloribus vitae, tempore libero. Provident, tempore, ab!</p>
+
     <div class="st-container-component">
-        <h4 class="st-h4">breadcrumb normal</h4>
-        <ul class="breadcrumb breadcrumb-normal clearfix">
-            <li class="breadcrumb-normal-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-normal-item"><a href="#">Source</a></li>
-            <li class="breadcrumb-normal-item current"><a href="#" class="current is-active">Followers</a></li>
+        <h4 class="st-h4">Breadcrumb simple</h4>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item-simple"><a href="#">Home</a></li>
+            <li class="breadcrumb-item-simple"><a href="#">Source</a></li>
+            <li class="breadcrumb-item-simple"><a href="#">Followers</a></li>
         </ul>
     </div>
 <pre><code class="language-markup">
-<ul class="breadcrumb breadcrumb-normal">
-    <ul class="breadcrumb breadcrumb-normal clearfix">
-        <li class="breadcrumb-normal-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-normal-item"><a href="#">Source</a></li>
-        <li class="breadcrumb-normal-item current"><a href="#" class="current is-active">Followers</a></li>
-    </ul>
-</ul>
+  <ul class="breadcrumb">
+      <li class="breadcrumb-item-simple"><a href="#">Home</a></li>
+      <li class="breadcrumb-item-simple"><a href="#">Source</a></li>
+      <li class="breadcrumb-item-simple"><a href="#">Followers</a></li>
+  </ul>
 </code></pre>
 
     <div class="st-container-component">
-        <h4 class="st-h4">breadcrumb simple</h4>
-        <ul class="breadcrumb breadcrumb-simple">
-            <li class="breadcrumb-simple-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-simple-item"><a href="#">Source</a></li>
-            <li class="breadcrumb-simple-item current"><a href="#">Followers</a></li>
+        <h4 class="st-h4">Breadcrumb normal</h4>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Source</a></li>
+            <li class="breadcrumb-item"><a href="#">Followers</a></li>
         </ul>
     </div>
 <pre><code class="language-markup">
-  <ul class="breadcrumb breadcrumb-simple">
-      <li class="breadcrumb-simple-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-simple-item"><a href="#">Source</a></li>
-      <li class="breadcrumb-simple-item current"><a href="#">Followers</a></li>
+  <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Source</a></li>
+      <li class="breadcrumb-item"><a href="#">Followers</a></li>
+  </ul>
+</code></pre>
+
+    <div class="st-container-component">
+        <h4 class="st-h4">Breadcrumb big</h4>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item breadcrumb-item-large"><a href="#">Home</a></li>
+            <li class="breadcrumb-item breadcrumb-item-large"><a href="#">Source</a></li>
+            <li class="breadcrumb-item breadcrumb-item-large"><a href="#">Followers</a></li>
+        </ul>
+    </div>
+<pre><code class="language-markup">
+  <ul class="breadcrumb">
+      <li class="breadcrumb-item breadcrumb-item-large"><a href="#">Home</a></li>
+      <li class="breadcrumb-item breadcrumb-item-large"><a href="#">Source</a></li>
+      <li class="breadcrumb-item breadcrumb-item-large"><a href="#">Followers</a></li>
   </ul>
 </code></pre>
 
     <div class="st-container-component">
         <h4 class="st-h4">breadcrumb avatar</h4>
-        <ul class="breadcrumb breadcrumb-avatar">
-            <li class="breadcrumb-simple-item large">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item breadcrumb-item-large">
                 <div class="avatar-module">
                     <div class="avatar-image">
                         <img class="avatar" src="//gravatar.com/avatar/4aeb778e1a4f2afba6142d6eff73b8a6?s=80" width="36" height="36" >
@@ -201,11 +216,8 @@
                     </div>
                 </div>
             </li>
-            <li class="breadcrumb-simple-item large">
+            <li class="breadcrumb-item breadcrumb-item-large">
                 <div class="avatar-module">
-                    <div class="avatar-image">
-                        <img class="avatar" src="//gravatar.com/avatar/4aeb778e1a4f2afba6142d6eff73b8a6?s=80" width="36" height="36" >
-                    </div>
                     <div class="avatar-details">
                         <a href="#" class="avatar-user">SOURCE</a>
                         <span class="dropdown-toggler"></span>
@@ -213,11 +225,8 @@
                     </div>
                 </div>
             </li>
-            <li class="breadcrumb-simple-item large current">
+            <li class="breadcrumb-item breadcrumb-item-large">
                 <div class="avatar-module">
-                    <div class="avatar-image">
-                        <img class="avatar" src="//gravatar.com/avatar/4aeb778e1a4f2afba6142d6eff73b8a6?s=80" width="36" height="36" >
-                    </div>
                     <div class="avatar-details">
                         <a href="#" class="avatar-user">AT</a>
                         <span class="dropdown-toggler"></span>
