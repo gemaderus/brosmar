@@ -105,6 +105,14 @@ module.exports = function(grunt) {
       }
     },
 
+    rename: {
+      svg: {
+        files: [
+            {src: ['assets/sandbox.svg'], dest: 'views/partial/svg.html'}
+        ]
+      }
+    },
+
     svgmin: {
       options: {
         plugins: [
@@ -124,6 +132,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-rename');
   grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-spritesmith');
@@ -148,6 +157,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['help']);
   grunt.registerTask('build', ['sass:dist', 'autoprefixer']);
   grunt.registerTask('sprites', ['sprite']);
-  grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore']);
+  grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore', 'rename:svg']);
   grunt.registerTask('server', ['sass:dev', 'autoprefixer', 'express', 'open:dev', 'watch']);
 }
