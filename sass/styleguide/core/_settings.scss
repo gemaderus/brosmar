@@ -1,0 +1,39 @@
+/*
+
+Variables, colors and other stuff
+---------------------------------
+
+*/
+
+// Some media queries measures
+$tablet: 480px;
+$desktop: 800px;
+$wide-desktop: 1280px;
+
+// Base line height
+$line-size: 1.5;
+
+// To be used in the white-spacing helper
+$space1: .5rem;
+$space2: 1rem;
+$space3: 2rem;
+$space4: 3rem;
+
+// Refactor this mess, we need a better way naming this kind of stuff.
+// And we need to be unflexible, it doesn't make sense to have more than
+// ten colors. We should generate new colors from those ten using Sass
+// color functions: darken and lighten.
+
+$base-color: #555;
+$socialbro: #26B7C2;
+$service: #009EE1;
+$error: #C60E32;
+$succeed: #6AB624;
+$primary: #F18B46;
+$black: #000000;
+$titles: #804997;
+$common-text: #565656;
+$support-text: #B1B1B1;
+$black-grounds: #F2F2F2;
+$white: #ffffff;
+$border: #edeff0;

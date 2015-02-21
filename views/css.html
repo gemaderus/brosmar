@@ -1,0 +1,376 @@
+{% extends "layout.html" %}
+
+{% block content_left %}
+  <ul class="st-content-left">
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Grid system</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Text block</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Forms</a></li>
+    <li class="st-content-left-item"><a class="st-a" href="#">Form inline</a></li>
+    <li class="st-content-left-item"><a class="st-a" href="#">Form fields</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Tables</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Buttons</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Menus</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Colors</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Icons</a></li>
+    <li class="st-content-left-item"><a class="st-a bold" href="#">Helper classes</a></li>
+  </ul>
+{% endblock %}
+
+{% block content_right %}
+  <p class="st-p leading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, dolor unde eaque tenetur quaerat laudantium voluptates officiis nulla impedit! Veniam optio minima minus facere repellat odio, ipsa fuga cupiditate cum.</p>
+  <p class="st-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus officia sed maxime ex itaque quod ducimus consequatur aspernatur qui non, eaque molestiae ipsum iste, veniam possimus voluptatibus ab ratione.</p>
+
+  <h2 class="st-h2">Tipography</h2>
+  <p class="st-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repellendus officia sed maxime ex itaque quod ducimus consequatur aspernatur qui non, eaque molestiae ipsum iste, veniam possimus voluptatibus ab ratione.</p>
+
+  <ul class="tipography-items">
+    <li class="tipography-item">
+      <p>h1 30px bold</p>
+      <h1>water under the bridge</h1>
+    </li>
+    <li class="tipography-item">
+      <p>h2 20px bold</p>
+      <h2>water under the bridge</h2>
+    </li>
+    <li class="tipography-item">
+      <p>h3 20px normal</p>
+      <h3>water under the bridge</h3>
+    </li>
+    <li class="tipography-item">
+      <p>p 14px normal</p>
+      <p>water under the bridge</p>
+    </li>
+    <li class="tipography-item">
+      <p>p 12px small</p>
+      <p class="s12">water under the bridge</p>
+    </li>
+    <li class="tipography-item">
+      <p>span 12px normal</p>
+      <span class="s12">water under the bridge</span>
+    </li>
+    <li class="tipography-item">
+      <p>link any normal</p>
+      <a href="#">water under the bridge</a>
+    </li>
+    <li class="tipography-item">
+      <p>label 13px normal</p>
+      <label class="s13">water under the bridge</label>
+    </li>
+  </ul>
+
+  <div class="st-content-pills">
+    <h2 class="st-h2">Colours</h2>
+    <ul class="st-samples align-justify">
+      <li class="st-sample st-socialbro">
+        <div class="st-sample-details">
+          <h6 class="st-h6">socialbro</h6>
+          <span class="st-span">#26B7C2</span>
+        </div>
+      </li>
+      <li class="st-sample st-service">
+        <div class="st-sample-details">
+          <h6 class="st-h6">service</h6>
+          <span class="st-span">#009EE1</span>
+        </div>
+      </li>
+      <li class="st-sample st-error">
+        <div class="st-sample-details">
+          <h6 class="st-h6">error</h6>
+          <span class="st-span">#C60E32</span>
+        </div>
+      </li>
+      <li class="st-sample st-succeed">
+        <div class="st-sample-details">
+          <h6 class="st-h6">succeed</h6>
+          <span class="st-span">#6AB624</span>
+        </div>
+      </li>
+      <li class="st-sample st-primary">
+        <div class="st-sample-details">
+          <h6 class="st-h6">primary</h6>
+          <span class="st-span">#F18B46</span>
+        </div>
+      </li>
+      <li class="st-sample st-black">
+        <div class="st-sample-details">
+          <h6 class="st-h6">main titles</h6>
+          <span class="st-span">#000000</span>
+        </div>
+      </li>
+      <li class="st-sample st-titles">
+        <div class="st-sample-details">
+          <h6 class="st-h6">support titles</h6>
+          <span class="st-span">#804997</span>
+        </div>
+      </li>
+      <li class="st-sample st-common-text">
+        <div class="st-sample-details">
+          <h6 class="st-h6">common text</h6>
+          <span class="st-span">#565656</span>
+        </div>
+      </li>
+      <li class="st-sample st-support-tex">
+        <div class="st-sample-details">
+          <h6 class="st-h6">support text</h6>
+          <span class="st-span">#B1B1B1</span>
+        </div>
+      </li>
+      <li class="st-sample st-blackgrounds">
+        <div class="st-sample-details">
+          <h6 class="st-h6">blackgrounds</h6>
+          <span class="st-span">#F2F2F2</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="st-content-pills">
+    <h2 class="st-h2">Icons</h2>
+    <p class="st-p">Using SVG icons, an image format for vector graphics, to make our CSS more and more modular, structured and flexible</p>
+    <div class="st-icons-holder align-justify">
+      <div class="st-icon-container st-socialbro">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-banknote"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-error">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-bubble"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-service">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-bulb"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-succeed">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-calendar"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-primary">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-camera"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-socialbro">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-clip"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-error">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-clock"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-service">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-cloud"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-succeed">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-cup"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-primary">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-data"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-socialbro">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-diamond"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-error">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-display"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-service">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-eye"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-succeed">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-fire"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-primary">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-food"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-socialbro">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-heart"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-error">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-key"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-service">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-lab"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-succeed">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-like"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-primary">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-location"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-socialbro">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-lock"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-error">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-mail"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-service">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-megaphone"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-succeed">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-music"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-primary">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-news"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-socialbro">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-note"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-error">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-paperplane"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-service">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-params"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-succeed">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-pen"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-primary">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-socialbro">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-photo"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-error">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-service">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-settings"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-succeed">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-shop"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-primary">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-sound"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-socialbro">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-stack"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-error">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-star"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-service">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-study"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-succeed">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-t-shirt"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-primary">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-tag"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-socialbro">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-trash"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-error">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-truck"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-service">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-tv"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-succeed">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-user"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-primary">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-video"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-socialbro">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-vynil"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-error">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-wallet"></use>
+        </svg>
+      </div>
+      <div class="st-icon-container st-service">
+        <svg viewBox="0 0 100 100" class="icon-large st-icon">
+          <use xlink:href="#icon-world"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+

@@ -1,0 +1,29 @@
+/*
+
+Breadcrumb dashboard
+--------------------
+
+Breadcrumb styles for the dashboard.
+
+*/
+
+.breadcrumb-home {
+
+    .breadcrumb-item {
+
+        h2 {
+            font-weight: normal;
+        }
+
+        span {
+            color: #999;
+        }
+    }
+
+    .breadcrumb-item:last-child {
+
+        h2, a {
+            font-weight: bold;
+        }
+    }
+}

@@ -1,25 +1,10 @@
 // BASE
 
 @import "mixins";
-@import "../styleguide/generic/settings";
+@import "../styleguide/core/settings";
 @import "fonts";
 @import "colors";
 @import "heading";
-
-
-
-
-// COMPONENT
-
-// @import "button";
-// @import "field-text";
-// @import "select";
-
-// ELEMENT
-
-// @import "form-base";
-// @import "form-attendee";
-
 
 // HELPER
 
@@ -29,17 +14,15 @@
 @import "../styleguide/helpers/clearfix";
 @import "../styleguide/helpers/align";
 
-// Syntax Highlight
+// SYNTAX HIGHLIGHT
+
 @import "prism";
 
 // LAYOUT
+
 @import "header";
 @import "home";
 @import "content";
 @import "samples";
 @import "icons";
 @import "footer";
-// @import "content";
-// @import 'media';
-// @import 'background-images';
-// @import 'intro';

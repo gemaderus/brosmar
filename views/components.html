@@ -1,0 +1,264 @@
+{% extends "layout.html" %}
+
+{% block content_left %}
+<ul class="st-content-left">
+  <li class="st-content-left-item"><a class="st-a bold" href="#pagination">Pagination</a></li>
+  <li class="st-content-left-item"><a class="st-a bold" href="#tabs">Tabs</a></li>
+  <li class="st-content-left-item"><a class="st-a" href="#tabs-block-bottom">Tabs block bottom</a></li>
+  <li class="st-content-left-item"><a class="st-a" href="#tabs-block-left">Tabs block on left</a></li>
+  <li class="st-content-left-item"><a class="st-a" href="#tabs-block-right">Tabs block on right</a></li>
+  <li class="st-content-left-item"><a class="st-a bold" href="#breadcrumb">Breadcrumb</a></li>
+  <li class="st-content-left-item"><a class="st-a" href="#breadcrumb-normal">Breadcrumb normal</a></li>
+  <li class="st-content-left-item"><a class="st-a" href="#breadcrumb-dashboard">Breadcrumb dashboard</a></li>
+</ul>
+
+{% endblock %}
+
+{% block content_right %}
+<div class="st-content-pills" id="pagination">
+    <h2 class="st-h2">Pagination</h2>
+    <p class="st-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed perferendis dignissimos laudantium, quae vel commodi. Aperiam animi laudantium provident hic quia incidunt rem doloribus vitae, tempore libero. Provident, tempore, ab!</p>
+    <div class="st-container-component">
+        <h4 class="st-h4">pagination</h4>
+        <ul class="pagination">
+            <li class="pagination-item"><a class="pagination-prev" href="#">prev</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+            <li class="pagination-item"><a class="pagination-link is-active" href="#">3</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+            <li class="pagination-item"><a class="pagination-next" href="#">next</a></li>
+        </ul>
+    </div>
+    <pre><code class="language-markup">
+  <ul class="pagination">
+    <li class="pagination-item"><a class="pagination-prev" href="#">prev</a></li>
+    <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
+    <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+    <li class="pagination-item"><a class="pagination-link is-active" href="#">3</a></li>
+    <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+    <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+    <li class="pagination-item"><a class="pagination-next" href="#">next</a></li>
+  </ul>
+    </code></pre>
+</div>
+
+<div class="st-content-pills" id="tabs">
+  <h2 class="st-h2">Tabs</h2>
+  <p class="st-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eveniet dicta accusamus. Similique, ut labore molestiae molestias, non blanditiis ea hic facere nesciunt minima neque dicta. Repellat laudantium modi blanditiis.</p>
+  <div class="st-container-component">
+    <h4 class="st-h4">Tabs: by default is a block</h4>
+    <div class="sb-tabs eighty percent mx-auto">
+      <ul class="sb-tabs-group">
+        <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
+        <li class="sb-tab"><a href="#/two">Sexy</a></li>
+        <li class="sb-tab"><a href="#/three">Tabs</a></li>
+      </ul>
+      <div class="sb-tabs-content">
+        Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur. Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq. Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq.
+      </div>
+    </div>
+  </div>
+
+  <pre><code class="language-markup">
+  <div class="sb-tabs eighty percent mx-auto">
+    <ul class="sb-tabs-group">
+      <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
+      <li class="sb-tab"><a href="#/two">Sexy</a></li>
+      <li class="sb-tab"><a href="#/three">Tabs</a></li>
+    </ul>
+    <div class="sb-tabs-content">
+      Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur. Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq. Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq.
+    </div>
+  </div>
+  </code></pre>
+
+  <div class="st-container-component" id="tabs-block-bottom">
+    <h4 class="st-h4">Tabs block bottom, with align text center</h4>
+    <div class="sb-tabs sb-tabs--block-bottom eighty percent mx-auto">
+      <div class="sb-tabs-content">
+        Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur. Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq. Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq.
+      </div>
+      <ul class="sb-tabs-group align-center">
+        <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
+        <li class="sb-tab"><a href="#/two">Sexy</a></li>
+        <li class="sb-tab"><a href="#/three">Tabs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <pre><code class="language-markup">
+    <div class="sb-tabs sb-tabs--block-bottom eighty percent mx-auto">
+      <div class="sb-tabs-content">
+        Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur. Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq. Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq.
+      </div>
+      <ul class="sb-tabs-group align-center">
+        <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
+        <li class="sb-tab"><a href="#/two">Sexy</a></li>
+        <li class="sb-tab"><a href="#/three">Tabs</a></li>
+      </ul>
+    </div>
+  </code></pre>
+
+  <div class="st-container-component" id="tabs-block-left">
+    <h4 class="st-h4">Tabs block on left</h4>
+    <div class="sb-tabs sb-tabs--block-left eighty percent mx-auto">
+      <ul class="sb-tabs-group">
+        <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
+        <li class="sb-tab"><a href="#/two">Sexy</a></li>
+        <li class="sb-tab"><a href="#/three">Tabs</a></li>
+      </ul>
+
+      <div class="sb-tabs-content">
+        Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur. Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq. Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq.
+      </div>
+    </div>
+  </div>
+
+  <pre><code class="language-markup">
+    <div class="sb-tabs sb-tabs--block-left eighty percent mx-auto">
+      <ul class="sb-tabs-group">
+        <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
+        <li class="sb-tab"><a href="#/two">Sexy</a></li>
+        <li class="sb-tab"><a href="#/three">Tabs</a></li>
+      </ul>
+
+      <div class="sb-tabs-content">
+        Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur. Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq. Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq.
+      </div>
+    </div>
+  </code></pre>
+
+  <div class="st-container-component" id="tabs-block-right">
+    <h4 class="st-h4">Tabs block on right</h4>
+    <div class="sb-tabs sb-tabs--block-right eighty percent mx-auto">
+      <ul class="sb-tabs-group">
+        <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
+        <li class="sb-tab"><a href="#/two">Sexy</a></li>
+        <li class="sb-tab"><a href="#/three">Tabs</a></li>
+      </ul>
+
+      <div class="sb-tabs-content">
+        Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur. Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq. Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq.
+      </div>
+    </div>
+  </div>
+
+  <pre><code class="language-markup">
+    <div class="sb-tabs sb-tabs--left eighty percent mx-auto">
+      <ul class="sb-tabs-group">
+        <li class="sb-tab sb-tab-active"><a href="#/one">Very</a></li>
+        <li class="sb-tab"><a href="#/two">Sexy</a></li>
+        <li class="sb-tab"><a href="#/three">Tabs</a></li>
+      </ul>
+
+      <div class="sb-tabs-content">
+        Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur. Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq. Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq.
+      </div>
+    </div>
+  </pre></code>
+</div>
+
+<div class="st-content-pills" id="breadcrumb">
+    <h2 class="st-h2">Breadcrumb</h2>
+    <p class="st-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed perferendis dignissimos laudantium, quae vel commodi. Aperiam animi laudantium provident hic quia incidunt rem doloribus vitae, tempore libero. Provident, tempore, ab!</p>
+
+    <div class="st-container-component">
+        <h4 class="st-h4">Breadcrumb simple</h4>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item-simple"><a href="#">Home</a></li>
+            <li class="breadcrumb-item-simple"><a href="#">Source</a></li>
+            <li class="breadcrumb-item-simple"><a href="#">Followers</a></li>
+        </ul>
+    </div>
+<pre><code class="language-markup">
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item-simple"><a href="#">Home</a></li>
+    <li class="breadcrumb-item-simple"><a href="#">Source</a></li>
+    <li class="breadcrumb-item-simple"><a href="#">Followers</a></li>
+  </ul>
+</code></pre>
+
+    <div class="st-container-component" id="breadcrumb-normal">
+        <h4 class="st-h4">Breadcrumb normal</h4>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Source</a></li>
+            <li class="breadcrumb-item"><a href="#">Followers</a></li>
+        </ul>
+    </div>
+<pre><code class="language-markup">
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Source</a></li>
+    <li class="breadcrumb-item"><a href="#">Followers</a></li>
+  </ul>
+</code></pre>
+
+    <div class="st-container-component" id="breadcrumb-dashboard">
+        <h4 class="st-h4">Breadcrumb dashboard</h4>
+        <ul class="breadcrumb breadcrumb-home">
+            <li class="breadcrumb-item breadcrumb-item-large">
+                <div class="media">
+                    <div class="media-image">
+                        <img class="avatar-small" src="//gravatar.com/avatar/4aeb778e1a4f2afba6142d6eff73b8a6?s=80">
+                    </div>
+                    <div class="media-body s12">
+                        <h2 class="s12">ACCOUNT <span class="dropdown-toggler ml1"></span></h2>
+                        <a href="#">Home</a>
+                    </div>
+                </div>
+            </li>
+            <li class="breadcrumb-item breadcrumb-item-large">
+                <div class="media">
+                    <div class="media-body s12">
+                        <h2 class="s12">SOURCE <span class="dropdown-toggler ml1"></span></h2>
+                        <span>No source selected</span>
+                    </div>
+                </div>
+            </li>
+            <li class="breadcrumb-item breadcrumb-item-large">
+                <div class="media">
+                    <div class="media-body s12">
+                        <h2 class="s12">AT <span class="dropdown-toggler ml1"></span></h2>
+                        <a href="#">Dashboard</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+<pre><code class="language-markup">
+  <ul class="breadcrumb breadcrumb-home">
+    <li class="breadcrumb-item breadcrumb-item-large">
+      <div class="media">
+        <div class="media-image">
+          <img class="avatar-small" src="//gravatar.com/avatar/4aeb778e1a4f2afba6142d6eff73b8a6?s=80">
+        </div>
+        <div class="media-body s12">
+          <h2 class="s12">ACCOUNT <span class="dropdown-toggler ml1"></span></h2>
+          <a href="#">Home</a>
+        </div>
+      </div>
+    </li>
+    <li class="breadcrumb-item breadcrumb-item-large">
+      <div class="media">
+        <div class="media-body s12">
+          <h2 class="s12">SOURCE <span class="dropdown-toggler ml1"></span></h2>
+          <span>No source selected</span>
+        </div>
+      </div>
+    </li>
+    <li class="breadcrumb-item breadcrumb-item-large">
+      <div class="media">
+        <div class="media-body s12">
+          <h2 class="s12">AT <span class="dropdown-toggler ml1"></span></h2>
+          <a href="#">Dashboard</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</code></pre>
+</div>
+{% endblock %}
+
+

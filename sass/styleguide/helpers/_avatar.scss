@@ -1,0 +1,39 @@
+/*
+
+Avatar
+------
+
+Avatar helper to show rounded in a few sizes.
+
+    <img class="avatar-small" src="//gravatar.com/avatar/4aeb778e1a4f2afba6142d6eff73b8a6?s=80">
+
+*/
+
+%avatar {
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px $white;
+}
+
+.avatar-large {
+    @extend %avatar;
+    width: 74px;
+    height: 74px;
+}
+
+.avatar-medium {
+    @extend %avatar;
+    width: 48px;
+    height: 48px;
+}
+
+.avatar-small {
+    @extend %avatar;
+    width: 35px;
+    height: 35px;
+}
+
+.avatar-xsmall {
+    @extend %avatar;
+    width: 25px;
+    height: 25px;
+}

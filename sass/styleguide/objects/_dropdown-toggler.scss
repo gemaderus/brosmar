@@ -1,21 +1,33 @@
+/*
+
+Dropdown toggler
+----------------
+
+Base button to normalize behaviour. It renders the same for links, buttons or inputs type submit. Every other button style should extend this object.
+
+    <a href=# class="dropdown-toggler">Show settings options</a>
+
+*/
+
 .dropdown-toggler {
+    @include text-replacement;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    cursor: pointer;
     display: inline-block;
-    border: 1px solid $black-grounds;
-    background-color: $white;
-    padding: 0 0.4rem;
-    position: absolute;
-    top: 0;
-    left: 90%;
+    line-height: 1;
+    padding: 0.4rem 0.3rem;
+    vertical-align: text-top;
 }
 
 .dropdown-toggler:before {
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    border-top: 0.4rem solid #444;
     content: '';
     display: inline-block;
-    width: 0;
     height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid gray;
-    cursor: pointer;
+    width: 0;
 }
 

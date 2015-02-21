@@ -79,15 +79,16 @@
     }
 
     a {
-      color: $white;
-      font-size: 1.4rem;
-      display: inline-block;
-      padding: 1rem 2rem;
+        color: $white;
+        font-size: 1.4rem;
+        display: inline-block;
+        padding: 1rem 2rem;
 
-      &:hover {
-          width: 100%;
-          text-decoration: none;
-      }
+        &:hover {
+            color: #fff;
+            width: 100%;
+            text-decoration: none;
+        }
     }
 }
 

@@ -5,7 +5,7 @@ Grid
 
 Surprise! A grid system with rows and columns. You can nest it the times you want.
 
-<div class="row"> 
+<div class="row">
   <div class="column">
     <p class="demo-block">I'm a column. Full by default</p>
   </div>
@@ -22,86 +22,86 @@ Surprise! A grid system with rows and columns. You can nest it the times you wan
 $gutter-width: 0 !default;
 
 .row {
-  @extend %clearfix;
-  margin: 0;
-  margin-left: -$gutter-width;
-  padding: 0;
+    @extend %clearfix;
+    margin: 0;
+    margin-left: -$gutter-width;
+    padding: 0;
 }
 
 .column, .columns {
-  float: left;
-  padding-left: $gutter-width;
-  width: 100%;
+    float: left;
+    padding-left: $gutter-width;
+    width: 100%;
 }
 
 .row-reverse {
-  > .column, .columns {
-    float: right;
-  }
+    > .column, .columns {
+        float: right;
+    }
 }
 
 .row-full {
-  margin-left:0;
+    margin-left:0;
 
-  > .column, .columns {
-    padding-left:0;
-  }
+    > .column, .columns {
+        padding-left:0;
+    }
 }
 
 .row-narrow {
-  margin-left:-($gutter-width / 2);
+    margin-left:-($gutter-width / 2);
 
-  > .column, .columns {
-    padding-left:$gutter-width / 2;
-  }
+    > .column, .columns {
+        padding-left:$gutter-width / 2;
+    }
 }
 
 .row-wide {
-  margin-left:-($gutter-width * 2);
+    margin-left:-($gutter-width * 2);
 
-  > .column, .columns {
-    padding-left:$gutter-width * 2;
-  }
+    > .column, .columns {
+        padding-left:$gutter-width * 2;
+    }
 }
 
-/* WIDTHS */
+/* Widths */
 
 .one.column {
-  width: 12.5%;
+    width: 12.5%;
 }
 
 .two.columns, .one-quarter {
-  width: 25%;
+    width: 25%;
 }
 
 .three.columns {
-  width: 37.5%;
+    width: 37.5%;
 }
 
 .one-third {
-  width: 33.33%;
+    width: 33.33%;
 }
 
 .four.columns, .one-half {
-  width: 50%;
+    width: 50%;
 }
 
 .five.columns {
-  width: 62.5%;
+    width: 62.5%;
 }
 
 .two-thirds {
-  width: 66.66%;
+    width: 66.66%;
 }
 
 .six.columns, .three-quarters {
-  width: 75%;
+    width: 75%;
 }
 
 .seven.columns {
-  width: 87.5%;
+    width: 87.5%;
 }
 
 .eight.columns, .one-whole {
-  width: 100%;
+    width: 100%;
 }

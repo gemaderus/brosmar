@@ -1,3 +1,12 @@
+/*
+
+Breadcrumb
+----------
+
+Breadcrumb in two flavours: normal with arrow shapes and simple.
+
+*/
+
 .breadcrumb {
     @extend .clearfix;
     background-color: $white;
@@ -6,41 +15,17 @@
     overflow: hidden;
 }
 
-.breadcrumb-item-simple {
-    display: inline-block;
-    padding: 1rem 0;
-    vertical-align: middle;
-
-    &:after {
-        content: "/";
-        display: inline-block;
-        margin: 0 1rem;
-        color: gray;
-    }
-}
-
-.breadcrumb-item-simple:first-child {
-    margin-left: 2.5rem;
-}
-
-.breadcrumb-item-simple:last-child {
-
-    &:after {
-        content: normal;
-    }
-}
-
 .breadcrumb-item {
+    background-color: #f6f6f6;
     display: table-cell;
+    margin-left: -0.25rem;
     padding: 1rem 1rem 1rem 2.5rem;
     position: relative;
-    background-color: #f6f6f6;
-    margin-left: -0.25rem;
     vertical-align: middle;
 
     &:after, &:before {
-        content: '';
         border-style: solid;
+        content: '';
         display: block;
         height: 0;
         left: 100%;
@@ -88,5 +73,31 @@
         border-color: transparent transparent transparent #F6F6F6;
         border-width: 4rem 4rem 4rem 2.4rem;
         top: 0;
+    }
+}
+
+// Breadcrumb simple
+
+.breadcrumb-item-simple {
+    display: inline-block;
+    padding: 1rem 0;
+    vertical-align: middle;
+
+    &:after {
+        color: gray;
+        content: "/";
+        display: inline-block;
+        margin: 0 1rem;
+    }
+}
+
+.breadcrumb-item-simple:first-child {
+    margin-left: 2.5rem;
+}
+
+.breadcrumb-item-simple:last-child {
+
+    &:after {
+        content: normal;
     }
 }

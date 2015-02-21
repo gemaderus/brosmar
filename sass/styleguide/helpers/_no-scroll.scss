@@ -3,7 +3,8 @@
 No scroll
 ---------
 
-This helper is using when you want to force a no-scroll. In this app, we are using it to disable the page scroll when the sidebar off canvas menu is open.
+This helper is using when you want to force a no-scroll. In this app, we are using it to disable the page scroll,
+for instance, when the sidebar off canvas menu is open or a modal window with scroll.
 
 <div class="no-scroll">
   I'm poor, I have no scroll
@@ -12,6 +13,6 @@ This helper is using when you want to force a no-scroll. In this app, we are usi
 */
 
 .no-scroll {
-  overflow: hidden !important;
-  position: relative;
+    overflow: hidden !important;
+    position: relative;
 }

@@ -38,6 +38,10 @@
 .st-a {
     font-family: 'Open Sans';
     text-decoration: none;
+
+    &:hover {
+        color: #C60E32;
+    }
 }
 
 .st-span {

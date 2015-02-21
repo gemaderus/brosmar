@@ -8,22 +8,19 @@ This library is divided in the following sections:
 1.  Reset removes all the default styles on the page to start building using
     normalize.
 
-2.  Generic parts that load variables, functions and mixins. Use this
-    folder for code that is applied all over the app but it is not
-    specific to a base element or an object.
+2.  Generic parts that load variables, functions and mixins. Use thisfolder for code that
+    is applied all over the app but it is not specific to a base element or an object.
 
-3.  Helpers and useful chunks of code that do not fit in an object and
-    it is generic enough. If possible, create objects.
+3.  Helpers and useful chunks of code that do not fit in an object and it is generic enough.
+    If possible, create objects.
 
-4.  Base elements are the building blocks of the page. Paragraphs, lists,
-    images and so on.
+4.  Base elements are the building blocks of the page. Paragraphs, lists, images and so on.
 
 5.  Objects refer to each individual block that builds parts of the app.
 
 6.  Layout styles like background colors or images, usually they are refered as sections inside the dom html.
 
-7.  Vendor is code that other Javascript libraries use and do not tend
-    to follow the OOCSS approach.
+7.  Vendor is code that other Javascript libraries use and do not tend to follow the OOCSS approach.
 
 */
 
@@ -31,11 +28,11 @@ This library is divided in the following sections:
 
 @import "base/normalize";
 
-/* 2. Generic */
+/* 2. Core */
 
-@import "generic/settings";
-@import "generic/functions";
-@import "generic/mixins";
+@import "core/settings";
+@import "core/functions";
+@import "core/mixins";
 
 /* 3. Helpers */
 
@@ -46,6 +43,8 @@ This library is divided in the following sections:
 @import "helpers/is-hidden";
 @import "helpers/no-scroll";
 @import "helpers/white-spacing";
+@import "helpers/font-sizes";
+@import "helpers/avatar";
 
 /* 4. Base */
 
@@ -56,27 +55,24 @@ This library is divided in the following sections:
 @import "base/links";
 @import "base/label";
 @import "base/paragraphs";
-@import "base/tipography";
 
 /* 5. Objects */
 
 @import "objects/sprites";
-@import "objects/container";
 @import "objects/grid";
 @import "objects/nav";
 @import "objects/button";
 @import "objects/icons";
-@import "objects/svg";
 @import "objects/media";
 @import "objects/justify-columns";
 @import "objects/tabs";
 @import "objects/pagination";
 @import "objects/breadcrumb";
-@import "objects/avatar";
 @import "objects/dropdown-toggler";
 
 /* 6. Layout */
 
+@import "layout/dashboard/breadcrumb";
 
 /* 7. Vendor */
 
