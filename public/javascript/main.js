@@ -1,13 +1,13 @@
 console.log("Congratulations! You are set!");
 
-var blocks = document.querySelectorAll("pre code");
+$(".menu-header, .close-header").on("click", function(e){
+  e.preventDefault();
 
-[].forEach.call(blocks, function(block){
-  var html = block.innerHTML;
-  html = html.replace(/</g,"&lt;").replace(/>/g,"&gt;");
-  block.innerHTML = html;
+  var element = $(".menu-holder");
+  if(element.hasClass("active")) {
+    element.removeClass("active");
+   } else {
+     element.addClass("active");
+   }
+
 });
-
-console.log("escaped");
-
-Prism.highlightAll();

@@ -21,42 +21,36 @@
 
     {% include "partial/svg.html" %}
 
-    <div class="st-header">
-      <div class="st-container st-menu__holder">
-          <input type="checkbox" id="toggler" class="st-toggler__input"/>
-          <div class="st-navigation">
-              <div class="st-logo">
-                  <a class="st-a" href="#">Styleguide</a>
+    <div class="header">
+      <div class="container menu-holder">
+          <div class="navigation">
+              <div class="logo">
+                  <a class="logo-header" href="#">Uniformes</a>
               </div>
-              <div class="st-toggler__menu">
-                  <label for="toggler" class="st-toggler__label st-menu--header">Menu</label>
-                  <label for="toggler" class="st-toggler__label st-close--header">Close</label>
-              </div>
+              <ul class="toggler-menu">
+                  <li class="toogler-menu-item"><a href="#" class="menu-header">Menu</a></li>
+                  <li class="toogler-menu-item"><a href="#" class="close-header">Close</a></li>
+              </ul>
           </div>
-          <div class="st-toggler__content">
-              <ul class="st-toggler__navigation">
-                  <li class="st-toggler__items"><a class="st-a" href="/index">OVERVIEW</a></li>
-                  <li class="st-toggler__items"><a class="st-a" href="/css">CSS</a></li>
-                  <li class="st-toggler__items"><a class="st-a" href="/components">COMPONENTS</a></li>
+          <div class="toggler-content">
+              <ul class="toggler-navigation">
+                  <li class="toggler-items"><a class="st-a" href="/index">empresa</a></li>
+                  <li class="toggler-items"><a class="st-a" href="/css">catálogo</a></li>
+                  <li class="toggler-items"><a class="st-a" href="/components">contacto</a></li>
               </ul>
           </div>
       </div>
     </div>
-    <div class="st-container st-content">
-        {% block content_left %}
+    <div class="container content">
+        {% block content_column %}
         {% endblock %}
-
-        <div class="st-content-right">
-        {% block content_right %}
-        {% endblock %}
-        </div>
     </div>
 
-    <div class="st-footer">
-      <span class="st-span">© Copyright 2014 SocialBro.</span>
+    <div class="footer">
+      <span class="span">© Copyright 2015 Uniformes Colegiales Andalucía</span>
     </div>
 
-    <script src="/javascript/prism.js" data-manual></script>
+    <script src="/javascript/jquery.min.js"></script>
     <script src="/javascript/main.js"></script>
 
   </body>

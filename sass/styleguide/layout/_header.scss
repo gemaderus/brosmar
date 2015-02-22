@@ -36,7 +36,7 @@
     user-select: none;
     -webkit-user-select: none;
     display: inline-block;
-    @include rem(margin-right, 1.5);
+    margin-right: 1.5rem;
     vertical-align: middle;
     color: $white;
     font-size: 1.4rem;
@@ -135,7 +135,7 @@
     }
 
     .toggler-items:last-child {
-      @include rem(margin-right, 0);
+      margin-right: 0;
     }
 
     .navigation {
