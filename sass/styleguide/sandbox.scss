@@ -36,6 +36,7 @@ This library is divided in the following sections:
 
 /* 3. Helpers */
 
+@import "helpers/container";
 @import "helpers/align";
 @import "helpers/clearfix";
 @import "helpers/percent";
@@ -45,7 +46,7 @@ This library is divided in the following sections:
 @import "helpers/white-spacing";
 @import "helpers/font-sizes";
 @import "helpers/avatar";
-@import "helpers/container";
+
 
 /* 4. Base */
 
@@ -75,6 +76,9 @@ This library is divided in the following sections:
 
 @import "layout/dashboard/breadcrumb";
 @import "layout/header";
+@import "layout/content";
+@import "layout/content-carrusel";
+@import "layout/icons";
 @import "layout/footer";
 
 /* 7. Vendor */

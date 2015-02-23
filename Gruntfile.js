@@ -19,8 +19,7 @@ module.exports = function(grunt) {
           outputStyle: 'expanded'
         },
         files: {
-          'public/stylesheets/sandbox.css': 'sass/styleguide/sandbox.scss',
-          'public/stylesheets/main.css': 'sass/site/main.scss'
+          'public/stylesheets/sandbox.css': 'sass/styleguide/sandbox.scss'
         }
       },
       dist: {
@@ -28,8 +27,7 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'public/stylesheets/sandbox.min.css': 'sass/styleguide/sandbox.scss',
-          'public/stylesheets/main.min.css': 'sass/site/main.scss'
+          'public/stylesheets/sandbox.min.css': 'sass/styleguide/sandbox.scss'
         }
       }
     },
@@ -158,5 +156,5 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['sass:dist', 'autoprefixer']);
   grunt.registerTask('sprites', ['sprite']);
   grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore', 'rename:svg']);
-  grunt.registerTask('server', ['sass:dev', 'autoprefixer', 'express', 'open:dev', 'watch']);
+  grunt.registerTask('server', ['sass:dev', 'express', 'open:dev', 'watch']);
 }

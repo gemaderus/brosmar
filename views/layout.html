@@ -13,7 +13,6 @@
     <meta name="description" content="SocialBro CSS styleguides">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/stylesheets/sandbox.css" />
-    <link rel="stylesheet" href="/stylesheets/main.css" />
     <script src='//localhost:35729/livereload.js'></script>
 
   </head>
@@ -42,6 +41,10 @@
       </div>
     </div>
     <div class="container content">
+
+        {% block content_carrusel %}
+        {% endblock %}
+
         {% block content_column %}
         {% endblock %}
     </div>
