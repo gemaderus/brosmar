@@ -1,4 +1,4 @@
-# SocialBro Styleguide
+# Brosmar Website
 
 Sandbox tooling made with express, sass, grunt and love.
 
@@ -12,7 +12,7 @@ You'll need to have the following items installed before continuing.
 ## Quickstart
 
 ```bash
-git clone git@github.com:socialbro/styleguide.git
+git clone git@github.com:gemaderus/brosmar.git
 npm install
 ```
 
