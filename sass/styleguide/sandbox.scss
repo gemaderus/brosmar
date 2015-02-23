@@ -61,23 +61,20 @@ This library is divided in the following sections:
 /* 5. Objects */
 
 @import "objects/sprites";
-@import "objects/grid";
 @import "objects/nav";
 @import "objects/button";
 @import "objects/icons";
 @import "objects/media";
 @import "objects/justify-columns";
-@import "objects/tabs";
-@import "objects/pagination";
-@import "objects/breadcrumb";
 @import "objects/dropdown-toggler";
 
 /* 6. Layout */
 
 @import "layout/dashboard/breadcrumb";
 @import "layout/header";
-@import "layout/content";
+@import "layout/content-column";
 @import "layout/content-carrusel";
+@import "layout/content-info";
 @import "layout/icons";
 @import "layout/footer";
 

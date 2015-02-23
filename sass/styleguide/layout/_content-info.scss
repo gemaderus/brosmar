@@ -1,0 +1,33 @@
+.info-items {
+    padding: 2rem;
+}
+
+.info-items-title {
+    text-align: center;
+}
+
+.info-items-color {
+    background-color: $gray-lighter;
+    border-top: 1px solid $gray-light;
+    border-bottom: 1px solid $gray-light;
+}
+
+.info-items-photo {
+    @extend .clearfix;
+    max-width: 800px;
+    margin: auto;
+}
+
+.info-item-photo {
+    float: left;
+    background-image: url(http://lorempixel.com/200/200/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: $black;
+    font-weight: 700;
+    font-size: 2rem;
+}
