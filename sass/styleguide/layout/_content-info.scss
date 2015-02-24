@@ -1,9 +1,13 @@
 .info-items {
     padding: 2rem;
-}
 
-.info-items-title {
-    text-align: center;
+    .info-item-text {
+        margin-bottom: 3rem;
+    }
+
+    .info-item-title {
+        text-align: center;
+    }
 }
 
 .info-items-color {
