@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .header {
-    background-color: $socialbro;
+    background-color: $main-color;
 }
 
 .logo {
@@ -27,7 +27,7 @@
 
 .navigation {
     @extend .clearfix;
-    border-bottom: 1px solid darken($socialbro, 5%);
+    border-bottom: 1px solid darken($main-color, 5%);
 }
 
 .close-header, .menu-header {
@@ -52,7 +52,7 @@
 }
 
 .toggler-content {
-    background-color: $socialbro;
+    background-color: $main-color;
     max-height: 0;
     overflow: hidden;
     position: relative;
@@ -67,12 +67,12 @@
 
 .toggler-items {
     display: block;
-    border-bottom: 1px solid darken($socialbro, 5%);
+    border-bottom: 1px solid darken($main-color, 5%);
     line-height: 2.7rem;
     cursor: pointer;
 
     &:hover {
-        background-color: darken($socialbro, 5%);
+        background-color: darken($main-color, 5%);
     }
 
     a {

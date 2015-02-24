@@ -1,12 +1,8 @@
-.content-carrusel {
-    margin-bottom: 3rem;
+.content-carrusel-item {
+    max-height: 400px;
 }
 
-.content-carrusel-item {
-    background-image: url(http://lorempixel.com/1000/400/);
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 1000px;
-    // display: inline-block;
-    white-space: nowrap;
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
 }

@@ -14,10 +14,11 @@ $wide-desktop: 1280px;
 $line-size: 1.5;
 
 // To be used in the white-spacing helper
-$space1: .5rem;
-$space2: 1rem;
-$space3: 2rem;
-$space4: 3rem;
+$space1: 1rem;
+$space2: 2rem;
+$space3: 3rem;
+$space4: 4rem;
+$space6: 6rem;
 
 // Refactor this mess, we need a better way naming this kind of stuff.
 // And we need to be unflexible, it doesn't make sense to have more than
@@ -42,3 +43,5 @@ $border: #edeff0;
 
 $gray-light: #E9E9E9;
 $gray-lighter: #F2F2F2;
+$blue-light: #EFF5FA;
+$main-color: #1771A3;

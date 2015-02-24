@@ -46,6 +46,7 @@ This library is divided in the following sections:
 @import "helpers/white-spacing";
 @import "helpers/font-sizes";
 @import "helpers/avatar";
+@import "helpers/margin-bottom";
 
 
 /* 4. Base */
@@ -68,10 +69,11 @@ This library is divided in the following sections:
 @import "objects/justify-columns";
 @import "objects/dropdown-toggler";
 
+
 /* 6. Layout */
 
-@import "layout/dashboard/breadcrumb";
 @import "layout/header";
+@import "layout/intro";
 @import "layout/content-column";
 @import "layout/content-carrusel";
 @import "layout/content-info";
@@ -80,5 +82,7 @@ This library is divided in the following sections:
 
 /* 7. Vendor */
 
+@import "vendor/owl-carousel";
+@import "vendor/owl-theme";
 
 

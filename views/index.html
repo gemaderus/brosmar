@@ -1,17 +1,12 @@
 {% extends "layout.html" %}
 
-{% block content_carrusel %}
-    <ul class="container content-carrusel">
-        <li class="content-carrusel-item"></li>
-        <li class="content-carrusel-item"></li>
-        <li class="content-carrusel-item"></li>
-        <li class="content-carrusel-item"></li>
-    </ul>
-{% endblock %}
-
-
 {% block content_column %}
-<ul class="container content-column">
+<div class="container-intro mb6">
+    <h1 class="title-home mb1">Uniformes colegiales y equipaciones deportivas</h1>
+    <h2 class="subtitle-home">Pídenos <a href="#" class="action">presupuesto</a>, nos ajustamos a tus necesidades</h2>
+</div>
+
+<ul class="container content-column mb6">
     <li class="content-column-item">
         <div class="icon-container">
             <svg viewBox="0 0 100 100" class="icon icon-large">
@@ -19,16 +14,16 @@
             </svg>
         </div>
         <h2 class="content-column-item-title">Fabricantes</h2>
-        <p>Fabricamos uniformes escolares y prendas deportivas desde hace más de diez años, seleccionando los mejores tejidos.</p>
+        <p>Fabricamos uniformes escolares y prendas deportivas desde hace más de diez años, controlamos todo el proceso productivo, desde el diseño hasta la entrega al cliente.</p>
     </li>
     <li class="content-column-item">
-        <div class="icon-container">
+        <div class="icon-container mb6">
             <svg viewBox="0 0 100 100" class="icon icon-large">
                 <use xlink:href="#icon-like"></use>
             </svg>
         </div>
         <h2 class="content-column-item-title">Calidad</h2>
-        <p>Seleccionamos los mejores tejidos para nuestros clientes, garantizando una calidad inmejorable</p>
+        <p>Trabajamos con proveedores reconocidos en el sector, seleccionando los mejores tejidos para nuestros clientes, garantizando una calidad  y un servicio inmejorable.</p>
     </li>
     <li class="content-column-item">
         <div class="icon-container">
@@ -37,24 +32,46 @@
             </svg>
         </div>
         <h2 class="content-column-item-title">Precio</h2>
-        <p>Cuéntanos qué necesitas y te haremos un presupuesto ajustado a tus necesidades, sin compromiso y al mejor precio.</p>
+        <p>Cuéntanos qué necesitas y te haremos un presupuesto ajustado a tus necesidades, sin compromiso y al mejor precio. Para nosotros, la satisfacción de nuestros clientes es lo primero.</p>
     </li>
 </ul>
-{% endblock %}
 
-{% block content_info %}
+<div class="owl-carousel content-carrusel mb6">
+    <div class="content-carrusel-item">
+        <img src="/images/slide1.png" alt="Foo">
+    </div>
+    <div class="content-carrusel-item">
+        <img src="/images/slide6.png" alt="Foo">
+    </div>
+    <div class="content-carrusel-item">
+        <img src="/images/slide13.png" alt="Foo">
+    </div>
+    <div class="content-carrusel-item">
+        <img src="/images/slide18.png" alt="Foo">
+    </div>
+    <div class="content-carrusel-item">
+        <img src="/images/slide19.png" alt="Foo">
+    </div>
+    <div class="content-carrusel-item">
+        <img src="/images/slide20.png" alt="Foo">
+    </div>
+</div>
+
 <section class="info-items info-items-color">
     <div class="container">
-        <h2 class="info-item-title">Empresa</h2>
-        <p>Empresa dedicada a la fabricación, distribución y venta de Uniformes Colegiales y ropa
-        deportiva. Desde nuestra creación en 2003 como CEE (Centro Especial de Empleo) con personas con discapacidad hemos ido evolucionando desde el diseño y fabricación de equipaciones y material deportivo hasta ofrecer todos los componentes de un uniforme colegial. En los últimos años los uniformes colegiales han sufrido una gran evolución hasta alcanzar una gran personalización en muchos casos Desde COLEGIALES ANDALUCÍA estamos ofreciendo además de la diferenciación de imagen una diferenciación por servicio de cara al cliente final y una mejora en la gestión de la venta de los uniformes.</p>Ya desde el 2008 estamos trabajando con un número cada vez mayor de centros educativos y grupos educativos. Desde el 2014 nuestra fábrica “Brosmar  Los Corrales S.L.” ha comenzado la promoción y desarrollo de su nueva imagen corporativa: COLEGIALES ANDALUCÍA. En Colegiales Andalucía tratamos de asesorar a nuestros clientes para maximizar el rendimiento a nuestros productos ofreciendo una solución personalizada.En los últimos años los uniformes colegiales han sufrido una gran evolución hasta alcanzar una gran personalización en muchos casos Desde COLEGIALES ANDALUCÍA estamos ofreciendo además de la diferenciación de imagen una diferenciación por servicio de cara al cliente final y una mejora en la gestión de la venta de los uniformes.</p>
+        <h2 class="info-item-title">¿Quienes somos?</h2>
+        <p class="info-item-text mb3">Empresa dedicada a la fabricación, distribución y venta de Uniformes Colegiales y ropa deportiva. Desde nuestra creación en 2003 como CEE (Centro Especial de Empleo) con personas con discapacidad hemos ido evolucionando desde el diseño y fabricación de equipaciones y material deportivo hasta ofrecer todos los componentes de un uniforme colegial.</p>
+
+        <p class="info-item-text mb3">En los últimos años los uniformes colegiales han sufrido una gran evolución hasta alcanzar una gran personalización en muchos casos Desde COLEGIALES ANDALUCÍA estamos ofreciendo además de la diferenciación de imagen una diferenciación por servicio de cara al cliente final y una mejora en la gestión de la venta de los uniformes.</p>
+
+        <p class="info-item-text">Ya desde el 2008 estamos trabajando con un número cada vez mayor de centros educativos y grupos educativos. Desde el 2014 nuestra fábrica “Brosmar  Los Corrales S.L.” ha comenzado la promoción y desarrollo de su nueva imagen corporativa: COLEGIALES ANDALUCÍA. En Colegiales Andalucía tratamos de asesorar a nuestros clientes para maximizar el rendimiento a nuestros productos ofreciendo una solución personalizada.En los últimos años los uniformes colegiales han sufrido una gran evolución hasta alcanzar una gran personalización en muchos casos Desde COLEGIALES ANDALUCÍA estamos ofreciendo además de la diferenciación de imagen una diferenciación por servicio de cara al cliente final y una mejora en la gestión de la venta de los uniformes.</p>
     </div>
 </section>
 
 <section class="info-items">
     <div class="container">
-        <h2 class="info-item-title">Uniformes</h2>
-        <p class="info-item-text">Uniformes Colegiales ha diseñado una amplia gama de productos para atender las necesidades de cada cliente, ofreciendo desde una gama básica hasta la personalización de cada imagen corporativa. En los uniformes deportivos hemos desarrollado una serie de modelos actualizados en los que se pueden ofrecer tejidos técnicos para el desarrollo del deporte como tejidos Dryness que expulsan el sudor.</p>
+        <h2 class="info-item-title mb3">Productos</h2>
+        <p class="info-item-text mb3">Uniformes Colegiales ha diseñado una amplia gama de productos para atender las necesidades de cada cliente, ofreciendo desde una gama básica hasta la personalización de cada imagen corporativa. En los uniformes deportivos hemos desarrollado una serie de modelos actualizados en los que se pueden ofrecer tejidos técnicos para el desarrollo del deporte como tejidos Dryness que expulsan el sudor.</p>
         <ul class="info-items-photo">
             <li class="info-item-photo">falda-pichis</li>
             <li class="info-item-photo">pantalones</li>
@@ -73,9 +90,18 @@
 </section>
 
 <section class="info-items">
-    <div class="container">
+    <div class="container clearfix">
         <h2 class="info-item-title">Centros Especiales de Empleo</h2>
-        <p>Los Centros Especiales de Empleo (CEE) nacen en 1985 como fórmula de empleo para personas con discapacidad. Son empresas promovidas principalmente por asociaciones de personas con discapacidad y/o sus familiares, sin perjuicio de que cualquier persona física o jurídica pueda constituir uno. El objetivo principal de estos centros es la integración laboral y por tanto social de personas con discapacidad. Para obtener la calificación de Centro Especial de Empleo, las empresas deben contar en su plantilla con un mínimo del 70% de trabajadores con discapacidad y solicitar la correspondiente calificación a la administración competente.En nuestro caso en BROSMAR LOS CORRALES S.L. se encuentran trabajando en la actualidad 9 personas con discapacidad y día a día desarrollan su labor implicados con un proyecto empresarial basado en el servicio al cliente.</p>
+        <div class="container-info-item-photo">
+            <img src="/images/slide4.png" alt="centros especiles de empleo" class="info-item-photo-media large mb2">
+            <img src="/images/slide2.png" alt="centros especiales de empleo" class="group-info-item-photo-media group-left">
+            <img src="/images/slide8.png" alt="centros especilaes de empleo" class="group-info-item-photo-media group-right">
+        </div>
+        <div class="container-info-item-text">
+            <p class="info-item-text mb1">Los Centros Especiales de Empleo (CEE) nacen en 1985 como fórmula de empleo para personas con discapacidad. Son empresas promovidas principalmente por asociaciones de personas con discapacidad y/o sus familiares, sin perjuicio de que cualquier persona física o jurídica pueda constituir uno.</p>
+
+            <p class="info-item-text">El objetivo principal de estos centros es la integración laboral y por tanto social de personas con discapacidad. Para obtener la calificación de Centro Especial de Empleo, las empresas deben contar en su plantilla con un mínimo del 70% de trabajadores con discapacidad y solicitar la correspondiente calificación a la administración competente.En nuestro caso en BROSMAR LOS CORRALES S.L. se encuentran trabajando en la actualidad 9 personas con discapacidad y día a día desarrollan su labor implicados con un proyecto empresarial basado en el servicio al cliente.</p>
+        </div>
     </div>
 </section>
 {% endblock %}
