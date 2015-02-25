@@ -7,22 +7,21 @@
 
 .content-column {
     @extend .clearfix;
+    margin-bottom: 3rem;
+
+    @media all and (min-width: 769px) {
+        padding: 0 2rem;
+        margin-bottom: 6rem;
+    }
 }
 
 .content-column-item {
     display: block;
-    margin-bottom: 3rem;
-    padding: 2rem;
+    padding: 0 4rem;
     text-align: center;
-}
 
-.content-column-item-title {
-    text-align: center;
-}
+    @media all and (min-width: 769px) {
 
-@media all and (min-width: 769px) {
-
-    .content-column-item {
         float: left;
         width: calc(33.5% - 3rem);
         margin-right: 3rem;
@@ -34,9 +33,8 @@
             margin-right: 0;
         }
     }
-    .content-column {
-        padding: 0 2rem;
-    }
 }
 
-
+.content-column-item-title {
+    text-align: center;
+}
