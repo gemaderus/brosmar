@@ -1,4 +1,5 @@
 var express = require('express');
+var port = process.env.PORT || 3000;
 
 // export as module to run the server from grunt
 var app = module.exports = express();
@@ -19,4 +20,4 @@ require("./routes")(app);
 
 // Set server port. We are using grunt to run the server.
 // Uncomment this line if you don't.
-//app.listen(config.port);
+app.listen(port);

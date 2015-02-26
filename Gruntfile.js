@@ -157,4 +157,5 @@ module.exports = function(grunt) {
   grunt.registerTask('sprites', ['sprite']);
   grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore', 'rename:svg']);
   grunt.registerTask('server', ['sass:dev', 'express', 'open:dev', 'watch']);
+  grunt.registerTask('heroku', ['sass:dist', 'autoprefixer']);
 }
