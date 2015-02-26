@@ -139,7 +139,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('express', 'Start a custom web server', function() {
       grunt.log.writeln('Started web server on port 3000');
-      require('./index.js').listen(3000);
+      require('./index.js');
   });
 
   grunt.registerTask('help', 'Log some stuff.', function() {
