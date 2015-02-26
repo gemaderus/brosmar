@@ -27,7 +27,7 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'public/stylesheets/sandbox.min.css': 'sass/styleguide/sandbox.scss'
+          'public/stylesheets/sandbox.css': 'sass/styleguide/sandbox.scss'
         }
       }
     },
@@ -54,12 +54,12 @@ module.exports = function(grunt) {
         }
       },
 
-      // js: {
-      //   files: ['javascripts/**/*.js'],
-      //   options: {
-      //     livereload: true,
-      //   }
-      // }
+      js: {
+        files: ['javascripts/**/*.js'],
+        options: {
+          livereload: true,
+        }
+      }
 
     },
 
@@ -139,7 +139,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('express', 'Start a custom web server', function() {
       grunt.log.writeln('Started web server on port 3000');
-      require('./index.js').listen(3000);
+      require('./index.js');
   });
 
   grunt.registerTask('help', 'Log some stuff.', function() {
@@ -157,4 +157,5 @@ module.exports = function(grunt) {
   grunt.registerTask('sprites', ['sprite']);
   grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore', 'rename:svg']);
   grunt.registerTask('server', ['sass:dev', 'express', 'open:dev', 'watch']);
+  grunt.registerTask('heroku', ['sass:dist', 'autoprefixer']);
 }
