@@ -1,0 +1,26 @@
+.call-action {
+    @media all and (min-width: 770px) {
+        margin-bottom: 6rem;
+    }
+}
+
+.link-action {
+    display: inline-block;
+    background-color: $main-color;
+    border-radius: 8px;
+    color: $white;
+    font-weight: 700;
+    font-size: 2rem;
+
+    &:hover, &:active {
+        background-color: darken($main-color, 5%);
+    }
+}
+
+.link-action.large {
+    padding: 1rem 5rem;
+}
+
+.link-action.small {
+    padding: 1rem;
+}

@@ -1,25 +1,33 @@
 .info-items-photo {
     @extend .clearfix;
     max-width: 100%;
+
+    @media all and (min-width: 770px) {
+        margin-bottom: 6rem;
+    }
 }
 
 .info-item-photo {
     max-width: 100%;
     float: left;
     height: auto;
+
+    @media all and (min-width: 770px) {
+        width: 20%;
+    }
 }
 
 .info-item-photo.hidden {
     display: none;
+
+    @media all and (min-width: 770px) {
+        display: block;
+    }
 }
 
-@media all and (min-width: 770px) {
-    .info-item-photo {
-        width: 20%;
-    }
-
-    .info-item-photo.hidden {
-        display: block;
+.information {
+    @media all and (min-width: 769px) {
+        margin-bottom: 6rem;
     }
 }
 

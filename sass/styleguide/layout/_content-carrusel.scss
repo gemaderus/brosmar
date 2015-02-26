@@ -1,3 +1,9 @@
+.content-carrusel {
+    @media all and (min-width: 769px) {
+        margin-bottom: 6rem;
+    }
+}
+
 .content-carrusel-item {
     max-height: 400px;
 }
