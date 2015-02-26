@@ -1,4 +1,9 @@
 module.exports = function(app) {
+
+  app.get('/', function(req, res, next) {
+    res.render('index.html');
+  });
+
   app.get('/:page', function(req, res, next) {
     var page = req.params.page;
     res.render(page);
