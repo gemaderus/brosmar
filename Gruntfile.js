@@ -27,7 +27,7 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'public/stylesheets/sandbox.min.css': 'sass/styleguide/sandbox.scss'
+          'public/stylesheets/sandbox.css': 'sass/styleguide/sandbox.scss'
         }
       }
     },
@@ -54,12 +54,12 @@ module.exports = function(grunt) {
         }
       },
 
-      // js: {
-      //   files: ['javascripts/**/*.js'],
-      //   options: {
-      //     livereload: true,
-      //   }
-      // }
+      js: {
+        files: ['javascripts/**/*.js'],
+        options: {
+          livereload: true,
+        }
+      }
 
     },
 
