@@ -20,4 +20,6 @@ require("./routes")(app);
 
 // Set server port. We are using grunt to run the server.
 // Uncomment this line if you don't.
-app.listen(port);
+if (process.env.MODE === "production") {
+  app.listen(port);
+}
