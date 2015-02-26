@@ -190,5 +190,5 @@ module.exports = function(grunt) {
   grunt.registerTask('sprites', ['sprite']);
   grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore', 'rename:svg']);
   grunt.registerTask('server', ['concat', 'sass:dev', 'express', 'open:dev', 'watch']);
-  grunt.registerTask('heroku', ['sass:dist', 'autoprefixer']);
+  grunt.registerTask('heroku', ['uglify', 'sass:dist', 'autoprefixer']);
 }
