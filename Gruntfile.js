@@ -55,7 +55,8 @@ module.exports = function(grunt) {
       },
 
       js: {
-        files: ['javascripts/**/*.js'],
+        files: ['assets/**/*.js'],
+        tasks: ['concat'],
         options: {
           livereload: true,
         }
@@ -124,6 +125,36 @@ module.exports = function(grunt) {
         src: ['*.svg'],
         dest: 'assets/svg/compressed'
       }
+    },
+
+    uglify: {
+      dist: {
+        options: {
+          banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+            '<%= grunt.template.today("yyyy-mm-dd") %> */'
+        },
+        files: {
+          'public/javascript/sandbox.js': ['assets/javascript/jquery.js',
+                                           'assets/javascript/owl.carousel.js',
+                                           'assets/javascript/jquery.scrollto.js',
+                                           'assets/javascript/jquery.cookiebar.js',
+                                           'assets/javascript/main.js']
+        }
+      }
+    },
+
+    concat: {
+      options: {
+        separator: ';',
+      },
+      dist: {
+        src: ['assets/javascript/jquery.js',
+              'assets/javascript/owl.carousel.js',
+              'assets/javascript/jquery.scrollto.js',
+              'assets/javascript/jquery.cookiebar.js',
+              'assets/javascript/main.js'],
+        dest: 'public/javascript/sandbox.js',
+      },
     }
   });
 
@@ -136,6 +167,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-svgstore');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('express', 'Start a custom web server', function() {
       grunt.log.writeln('Started web server on port 3000');
@@ -153,9 +186,9 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', ['help']);
-  grunt.registerTask('build', ['sass:dist', 'autoprefixer']);
+  grunt.registerTask('build', ['uglify', 'sass:dist', 'autoprefixer']);
   grunt.registerTask('sprites', ['sprite']);
   grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore', 'rename:svg']);
-  grunt.registerTask('server', ['sass:dev', 'express', 'open:dev', 'watch']);
+  grunt.registerTask('server', ['concat', 'sass:dev', 'express', 'open:dev', 'watch']);
   grunt.registerTask('heroku', ['sass:dist', 'autoprefixer']);
 }

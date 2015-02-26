@@ -1,4 +1,6 @@
 var express = require('express');
+var compress = require('compression');
+
 var port = process.env.PORT || 3000;
 
 // export as module to run the server from grunt
@@ -8,6 +10,7 @@ var config = require("./config");
 
 app.disable("x-powered-by");
 
+app.use(compress());
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'html');
 
