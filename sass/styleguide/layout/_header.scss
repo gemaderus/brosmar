@@ -6,11 +6,44 @@
     background-color: $main-color;
 }
 
+.menu-holder {
+    @extend .clearfix;
+
+    &.active {
+        .navigation .toggler-menu {
+            .menu-header {
+                display: none;
+            }
+            .close-header {
+                display: block;
+            }
+        }
+        .toggler-content {
+            max-height: 180px;
+        }
+    }
+
+    @media all and (min-width: 769px) {
+        margin: auto;
+    }
+}
+
+.navigation {
+    @extend .clearfix;
+    border-bottom: 1px solid darken($main-color, 5%);
+
+    @media all and (min-width: 769px) {
+        border-bottom: 0;
+        float: left;
+        padding: 0;
+    }
+}
+
 .logo {
     line-height: 2.7rem;
     float: left;
     font-size: 2.2rem;
-    padding: 1.4rem 2rem;
+    padding: 1.4rem 1rem;
 
     a {
         color: $white;
@@ -27,13 +60,12 @@
     fill: #fff;
 }
 
-.menu-holder {
-    @extend .clearfix;
-}
+.toggler-menu {
+    float: right;
 
-.navigation {
-    @extend .clearfix;
-    border-bottom: 1px solid darken($main-color, 5%);
+    @media all and (min-width: 769px) {
+      display: none;
+    }
 }
 
 .close-header, .menu-header {
@@ -45,16 +77,13 @@
     margin-right: 1.5rem;
     vertical-align: middle;
     color: $white;
+    font-weight: bold;
     font-size: 1.4rem;
-    padding: 1.75rem 2rem;
+    padding: 1.9rem 2rem;
 }
 
 .close-header {
     display: none;
-}
-
-.toggler-menu {
-    float: right;
 }
 
 .toggler-content {
@@ -64,10 +93,37 @@
     position: relative;
     z-index: 999;
     transition: max-height .5s ease;
+
+    @media all and (min-width: 769px) {
+        background-color: transparent;
+        float: right;
+        height: auto;
+        padding: 0;
+        width: auto;
+        max-height: none;
+    }
 }
 
-.toggler-navigation {
-    list-style: none;
+.toogler-content a {
+    padding: 1.5rem 2rem;
+}
+
+.toogler-navigation {
+    @media all and (min-width: 769px) {
+        float: right;
+        padding: 0;
+        font-weight: 700;
+    }
+}
+
+.toggler-navigation li a {
+
+    @media all and (min-width: 769px) {
+        padding: 1.5rem 2rem;
+    }
+}
+
+.toggler-navigation, .close-header, .menu-header {
     text-transform: uppercase;
 }
 
@@ -86,86 +142,24 @@
         font-size: 1.4rem;
         display: inline-block;
         padding: 1rem 2rem;
+        font-weight: 700;
 
         &:hover {
-            color: #fff;
+            color: $white;
             width: 100%;
             text-decoration: none;
         }
     }
-}
 
-.menu-holder {
-    &.active {
-        .navigation .toggler-menu {
-            .menu-header {
-                display: none;
-            }
-            .close-header {
-                display: block;
-            }
-        }
-        .toggler-content {
-            max-height: 180px;
+    @media all and (min-width: 769px) {
+        display: inline-block;
+        border: none;
+        padding: 0;
+
+        .toggler-items:last-child {
+            margin-right: 0;
         }
     }
 }
 
-@media all and (min-width: 769px) {
-    .toggler-menu {
-      display: none;
-    }
-
-    .toggler-content {
-      background-color: transparent;
-      float: right;
-      height: auto;
-      padding: 0;
-      width: auto;
-
-      a {
-          padding: 1.4rem 2rem;
-      }
-    }
-
-    .toggler-navigation {
-      float: right;
-      padding: 0;
-      font-weight: 700;
-    }
-
-    .toggler-items {
-      display: inline-block;
-      border: none;
-      padding: 0;
-    }
-
-    .toggler-items:last-child {
-      margin-right: 0;
-    }
-
-    .navigation {
-      border-bottom: 0;
-      float: left;
-      padding: 0;
-    }
-
-    .menu-holder {
-      margin: auto;
-    }
-
-    .logo {
-      padding: 1.4rem 1rem;
-    }
-
-    .toggler-content {
-        max-height: none;
-    }
-
-    // .active .navigation .toggler-menu {
-    // .menu-header, .close-header {
-    //     display: none;
-    //     }
-    // }
-}
 

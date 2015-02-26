@@ -10,17 +10,18 @@
 
     @media all and (min-width: 769px) {
         padding: 0 2rem;
-        margin-bottom: 6rem;
     }
+}
+
+.title-color {
+    color: $main-color;
 }
 
 .content-column-item {
     display: block;
     padding: 0 4rem;
-    text-align: center;
 
     @media all and (min-width: 769px) {
-
         float: left;
         width: calc(33.5% - 3rem);
         margin-right: 3rem;

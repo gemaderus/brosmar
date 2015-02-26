@@ -1,19 +1,15 @@
-.call-action {
-    @media all and (min-width: 770px) {
-        margin-bottom: 6rem;
-    }
-}
-
 .link-action {
     display: inline-block;
     background-color: $main-color;
-    border-radius: 8px;
+    border-radius: 3px;
     color: $white;
     font-weight: 700;
     font-size: 2rem;
+    box-shadow: 0 3px 0 0 #024E77;
 
     &:hover, &:active {
         background-color: darken($main-color, 5%);
+        text-decoration: none;
     }
 }
 
