@@ -21,6 +21,7 @@
     display: block;
     padding: 0 4rem;
     text-align: left;
+    font-size: 1.7rem;
 
     @media all and (min-width: 769px) {
         width: 30%;
@@ -30,6 +31,10 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+
+    .content-column-item-text {
+        font-size: 1.7rem;
     }
 }
 
