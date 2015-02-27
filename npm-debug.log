@@ -1,0 +1,367 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json Brosmar@0.0.1 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Volumes/Work/uniformes',
+6 verbose install   [ 'body-parser',
+6 verbose install     'nunjucks',
+6 verbose install     'express',
+6 verbose install     'compression',
+6 verbose install     'grunt',
+6 verbose install     'grunt-autoprefixer',
+6 verbose install     'grunt-contrib-clean',
+6 verbose install     'grunt-contrib-copy',
+6 verbose install     'grunt-contrib-watch',
+6 verbose install     'grunt-modernizr',
+6 verbose install     'grunt-open',
+6 verbose install     'grunt-sass',
+6 verbose install     'grunt-spritesmith',
+6 verbose install     'grunt-svgstore',
+6 verbose install     'grunt-svgmin',
+6 verbose install     'node-sass',
+6 verbose install     'grunt-contrib-rename',
+6 verbose install     'grunt-contrib-uglify',
+6 verbose install     'grunt-contrib-concat' ] ]
+7 info preinstall Brosmar@0.0.1
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping body-parser@^1.10.0 /Volumes/Work/uniformes
+10 verbose already installed skipping nunjucks@^1.1.0 /Volumes/Work/uniformes
+11 verbose already installed skipping express@^4.10.6 /Volumes/Work/uniformes
+12 verbose cache add [ 'compression@~1.4.1', null ]
+13 verbose cache add name=undefined spec="compression@~1.4.1" args=["compression@~1.4.1",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'compression@~1.4.1',
+14 verbose parsed url   path: 'compression@~1.4.1',
+14 verbose parsed url   href: 'compression@~1.4.1' }
+15 verbose already installed skipping grunt@^0.4.5 /Volumes/Work/uniformes
+16 verbose already installed skipping grunt-autoprefixer@^1.0.1 /Volumes/Work/uniformes
+17 verbose already installed skipping grunt-contrib-clean@~0.6.0 /Volumes/Work/uniformes
+18 verbose already installed skipping grunt-contrib-copy@^0.7.0 /Volumes/Work/uniformes
+19 verbose already installed skipping grunt-contrib-watch@~0.5.3 /Volumes/Work/uniformes
+20 verbose already installed skipping grunt-modernizr@^0.6.0 /Volumes/Work/uniformes
+21 verbose cache add name="compression" spec="~1.4.1" args=["compression","~1.4.1"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '~1.4.1',
+22 verbose parsed url   path: '~1.4.1',
+22 verbose parsed url   href: '~1.4.1' }
+23 verbose addNamed [ 'compression', '~1.4.1' ]
+24 verbose addNamed [ null, '>=1.4.1-0 <1.5.0-0' ]
+25 verbose already installed skipping grunt-open@^0.2.3 /Volumes/Work/uniformes
+26 verbose already installed skipping grunt-sass@~0.16.1 /Volumes/Work/uniformes
+27 verbose already installed skipping grunt-spritesmith@^2.20.0 /Volumes/Work/uniformes
+28 verbose already installed skipping grunt-svgstore@^0.5.0 /Volumes/Work/uniformes
+29 verbose already installed skipping grunt-svgmin@~2.0.0 /Volumes/Work/uniformes
+30 verbose already installed skipping node-sass@~1.1.4 /Volumes/Work/uniformes
+31 silly lockFile 98924065-compression-1-4-1 compression@~1.4.1
+32 verbose lock compression@~1.4.1 /Users/Gema/.npm/98924065-compression-1-4-1.lock
+33 verbose already installed skipping grunt-contrib-rename@0.0.3 /Volumes/Work/uniformes
+34 verbose cache add [ 'grunt-contrib-uglify@~0.8.0', null ]
+35 verbose cache add name=undefined spec="grunt-contrib-uglify@~0.8.0" args=["grunt-contrib-uglify@~0.8.0",null]
+36 verbose parsed url { protocol: null,
+36 verbose parsed url   slashes: null,
+36 verbose parsed url   auth: null,
+36 verbose parsed url   host: null,
+36 verbose parsed url   port: null,
+36 verbose parsed url   hostname: null,
+36 verbose parsed url   hash: null,
+36 verbose parsed url   search: null,
+36 verbose parsed url   query: null,
+36 verbose parsed url   pathname: 'grunt-contrib-uglify@~0.8.0',
+36 verbose parsed url   path: 'grunt-contrib-uglify@~0.8.0',
+36 verbose parsed url   href: 'grunt-contrib-uglify@~0.8.0' }
+37 verbose cache add [ 'grunt-contrib-concat@~0.5.1', null ]
+38 verbose cache add name=undefined spec="grunt-contrib-concat@~0.5.1" args=["grunt-contrib-concat@~0.5.1",null]
+39 verbose parsed url { protocol: null,
+39 verbose parsed url   slashes: null,
+39 verbose parsed url   auth: null,
+39 verbose parsed url   host: null,
+39 verbose parsed url   port: null,
+39 verbose parsed url   hostname: null,
+39 verbose parsed url   hash: null,
+39 verbose parsed url   search: null,
+39 verbose parsed url   query: null,
+39 verbose parsed url   pathname: 'grunt-contrib-concat@~0.5.1',
+39 verbose parsed url   path: 'grunt-contrib-concat@~0.5.1',
+39 verbose parsed url   href: 'grunt-contrib-concat@~0.5.1' }
+40 verbose cache add name="grunt-contrib-uglify" spec="~0.8.0" args=["grunt-contrib-uglify","~0.8.0"]
+41 verbose parsed url { protocol: null,
+41 verbose parsed url   slashes: null,
+41 verbose parsed url   auth: null,
+41 verbose parsed url   host: null,
+41 verbose parsed url   port: null,
+41 verbose parsed url   hostname: null,
+41 verbose parsed url   hash: null,
+41 verbose parsed url   search: null,
+41 verbose parsed url   query: null,
+41 verbose parsed url   pathname: '~0.8.0',
+41 verbose parsed url   path: '~0.8.0',
+41 verbose parsed url   href: '~0.8.0' }
+42 verbose addNamed [ 'grunt-contrib-uglify', '~0.8.0' ]
+43 verbose addNamed [ null, '>=0.8.0-0 <0.9.0-0' ]
+44 silly lockFile 8389ff3e-grunt-contrib-uglify-0-8-0 grunt-contrib-uglify@~0.8.0
+45 verbose lock grunt-contrib-uglify@~0.8.0 /Users/Gema/.npm/8389ff3e-grunt-contrib-uglify-0-8-0.lock
+46 verbose cache add name="grunt-contrib-concat" spec="~0.5.1" args=["grunt-contrib-concat","~0.5.1"]
+47 verbose parsed url { protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: '~0.5.1',
+47 verbose parsed url   path: '~0.5.1',
+47 verbose parsed url   href: '~0.5.1' }
+48 verbose addNamed [ 'grunt-contrib-concat', '~0.5.1' ]
+49 verbose addNamed [ null, '>=0.5.1-0 <0.6.0-0' ]
+50 silly lockFile 03406c1b-grunt-contrib-concat-0-5-1 grunt-contrib-concat@~0.5.1
+51 verbose lock grunt-contrib-concat@~0.5.1 /Users/Gema/.npm/03406c1b-grunt-contrib-concat-0-5-1.lock
+52 silly addNameRange { name: 'compression',
+52 silly addNameRange   range: '>=1.4.1-0 <1.5.0-0',
+52 silly addNameRange   hasData: false }
+53 silly addNameRange { name: 'grunt-contrib-uglify',
+53 silly addNameRange   range: '>=0.8.0-0 <0.9.0-0',
+53 silly addNameRange   hasData: false }
+54 silly addNameRange { name: 'grunt-contrib-concat',
+54 silly addNameRange   range: '>=0.5.1-0 <0.6.0-0',
+54 silly addNameRange   hasData: false }
+55 verbose request where is /compression
+56 verbose request registry https://registry.npmjs.org/
+57 verbose request id 020bd42111ad0315
+58 verbose url raw /compression
+59 verbose url resolving [ 'https://registry.npmjs.org/', './compression' ]
+60 verbose url resolved https://registry.npmjs.org/compression
+61 verbose request where is https://registry.npmjs.org/compression
+62 info trying registry request attempt 1 at 21:04:08
+63 http GET https://registry.npmjs.org/compression
+64 verbose request where is /grunt-contrib-uglify
+65 verbose request registry https://registry.npmjs.org/
+66 verbose url raw /grunt-contrib-uglify
+67 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-uglify' ]
+68 verbose url resolved https://registry.npmjs.org/grunt-contrib-uglify
+69 verbose request where is https://registry.npmjs.org/grunt-contrib-uglify
+70 info trying registry request attempt 1 at 21:04:09
+71 verbose etag "3QDPDMDEYPNLRHU5UO140RL91"
+72 http GET https://registry.npmjs.org/grunt-contrib-uglify
+73 verbose request where is /grunt-contrib-concat
+74 verbose request registry https://registry.npmjs.org/
+75 verbose url raw /grunt-contrib-concat
+76 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-concat' ]
+77 verbose url resolved https://registry.npmjs.org/grunt-contrib-concat
+78 verbose request where is https://registry.npmjs.org/grunt-contrib-concat
+79 info trying registry request attempt 1 at 21:04:09
+80 verbose etag "CBS5VY6P5VCMD7GHLMSX08NCE"
+81 http GET https://registry.npmjs.org/grunt-contrib-concat
+82 http 200 https://registry.npmjs.org/grunt-contrib-concat
+83 silly registry.get cb [ 200,
+83 silly registry.get   { date: 'Thu, 26 Feb 2015 20:04:10 GMT',
+83 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+83 silly registry.get     etag: '"8CB5CMA6PQVTJP831JMMC298B"',
+83 silly registry.get     'content-type': 'application/json',
+83 silly registry.get     'cache-control': 'max-age=60',
+83 silly registry.get     'content-length': '30933',
+83 silly registry.get     'accept-ranges': 'bytes',
+83 silly registry.get     via: '1.1 varnish',
+83 silly registry.get     age: '13',
+83 silly registry.get     'x-served-by': 'cache-lcy1125-LCY',
+83 silly registry.get     'x-cache': 'HIT',
+83 silly registry.get     'x-cache-hits': '1',
+83 silly registry.get     'x-timer': 'S1424981050.501466,VS0,VE0',
+83 silly registry.get     vary: 'Accept',
+83 silly registry.get     'keep-alive': 'timeout=10, max=50',
+83 silly registry.get     connection: 'Keep-Alive' } ]
+84 silly addNameRange number 2 { name: 'grunt-contrib-concat',
+84 silly addNameRange   range: '>=0.5.1-0 <0.6.0-0',
+84 silly addNameRange   hasData: true }
+85 silly addNameRange versions [ 'grunt-contrib-concat',
+85 silly addNameRange   [ '0.1.0',
+85 silly addNameRange     '0.1.1',
+85 silly addNameRange     '0.1.2',
+85 silly addNameRange     '0.1.3',
+85 silly addNameRange     '0.2.0',
+85 silly addNameRange     '0.3.0',
+85 silly addNameRange     '0.4.0',
+85 silly addNameRange     '0.5.0',
+85 silly addNameRange     '0.5.1',
+85 silly addNameRange     '0.1.2-rc5',
+85 silly addNameRange     '0.1.2-rc6' ] ]
+86 verbose addNamed [ 'grunt-contrib-concat', '0.5.1' ]
+87 verbose addNamed [ '0.5.1', '0.5.1' ]
+88 silly lockFile 63a362d5-grunt-contrib-concat-0-5-1 grunt-contrib-concat@0.5.1
+89 verbose lock grunt-contrib-concat@0.5.1 /Users/Gema/.npm/63a362d5-grunt-contrib-concat-0-5-1.lock
+90 silly lockFile f6eb0009-t-grunt-contrib-concat-0-5-1-tgz https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+91 verbose lock https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz /Users/Gema/.npm/f6eb0009-t-grunt-contrib-concat-0-5-1-tgz.lock
+92 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz',
+92 verbose addRemoteTarball   '953c6efdfdfd2c107ab9c85077f2d4b24d31cd49' ]
+93 info retry fetch attempt 1 at 21:04:11
+94 verbose fetch to= /var/folders/22/g4j3xy2j03bfgcl9sm5z1gb00000gn/T/npm-24808-a7WIt7Jb/registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+95 http GET https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+96 http 200 https://registry.npmjs.org/compression
+97 silly registry.get cb [ 200,
+97 silly registry.get   { date: 'Thu, 26 Feb 2015 20:04:10 GMT',
+97 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+97 silly registry.get     etag: '"PMC7JA1F0EWGBSTWFPR05M5R"',
+97 silly registry.get     'content-type': 'application/json',
+97 silly registry.get     'cache-control': 'max-age=60',
+97 silly registry.get     'content-length': '47346',
+97 silly registry.get     'accept-ranges': 'bytes',
+97 silly registry.get     via: '1.1 varnish',
+97 silly registry.get     age: '33',
+97 silly registry.get     'x-served-by': 'cache-lcy1126-LCY',
+97 silly registry.get     'x-cache': 'HIT',
+97 silly registry.get     'x-cache-hits': '1',
+97 silly registry.get     'x-timer': 'S1424981050.508076,VS0,VE0',
+97 silly registry.get     vary: 'Accept',
+97 silly registry.get     'keep-alive': 'timeout=10, max=50',
+97 silly registry.get     connection: 'Keep-Alive' } ]
+98 silly addNameRange number 2 { name: 'compression',
+98 silly addNameRange   range: '>=1.4.1-0 <1.5.0-0',
+98 silly addNameRange   hasData: true }
+99 silly addNameRange versions [ 'compression',
+99 silly addNameRange   [ '1.0.0',
+99 silly addNameRange     '1.0.1',
+99 silly addNameRange     '1.0.2',
+99 silly addNameRange     '1.0.3',
+99 silly addNameRange     '1.0.4',
+99 silly addNameRange     '1.0.5',
+99 silly addNameRange     '1.0.6',
+99 silly addNameRange     '1.0.7',
+99 silly addNameRange     '1.0.8',
+99 silly addNameRange     '1.0.9',
+99 silly addNameRange     '1.0.10',
+99 silly addNameRange     '1.0.11',
+99 silly addNameRange     '1.1.0',
+99 silly addNameRange     '1.1.1',
+99 silly addNameRange     '1.1.2',
+99 silly addNameRange     '1.2.0',
+99 silly addNameRange     '1.2.1',
+99 silly addNameRange     '1.2.2',
+99 silly addNameRange     '1.3.0',
+99 silly addNameRange     '1.3.1',
+99 silly addNameRange     '1.4.0',
+99 silly addNameRange     '1.4.1' ] ]
+100 verbose addNamed [ 'compression', '1.4.1' ]
+101 verbose addNamed [ '1.4.1', '1.4.1' ]
+102 silly lockFile 5722d64b-compression-1-4-1 compression@1.4.1
+103 verbose lock compression@1.4.1 /Users/Gema/.npm/5722d64b-compression-1-4-1.lock
+104 silly lockFile f2c989f2-ompression-compression-1-4-1-tgz https://registry.npmjs.org/compression/-/compression-1.4.1.tgz
+105 verbose lock https://registry.npmjs.org/compression/-/compression-1.4.1.tgz /Users/Gema/.npm/f2c989f2-ompression-compression-1-4-1-tgz.lock
+106 verbose addRemoteTarball [ 'https://registry.npmjs.org/compression/-/compression-1.4.1.tgz',
+106 verbose addRemoteTarball   'c6f707ac2659e13c7f3e8834321b02cd09338d78' ]
+107 info retry fetch attempt 1 at 21:04:11
+108 verbose fetch to= /var/folders/22/g4j3xy2j03bfgcl9sm5z1gb00000gn/T/npm-24808-a7WIt7Jb/registry.npmjs.org/compression/-/compression-1.4.1.tgz
+109 http 200 https://registry.npmjs.org/grunt-contrib-uglify
+110 silly registry.get cb [ 200,
+110 silly registry.get   { date: 'Thu, 26 Feb 2015 20:04:10 GMT',
+110 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+110 silly registry.get     etag: '"9D8MYFRZGQM50SIWPV5PCNCTQ"',
+110 silly registry.get     'content-type': 'application/json',
+110 silly registry.get     'cache-control': 'max-age=60',
+110 silly registry.get     'content-length': '58535',
+110 silly registry.get     'accept-ranges': 'bytes',
+110 silly registry.get     via: '1.1 varnish',
+110 silly registry.get     age: '21',
+110 silly registry.get     'x-served-by': 'cache-lcy1122-LCY',
+110 silly registry.get     'x-cache': 'HIT',
+110 silly registry.get     'x-cache-hits': '1',
+110 silly registry.get     'x-timer': 'S1424981050.488358,VS0,VE0',
+110 silly registry.get     vary: 'Accept',
+110 silly registry.get     'keep-alive': 'timeout=10, max=50',
+110 silly registry.get     connection: 'Keep-Alive' } ]
+111 http GET https://registry.npmjs.org/compression/-/compression-1.4.1.tgz
+112 silly addNameRange number 2 { name: 'grunt-contrib-uglify',
+112 silly addNameRange   range: '>=0.8.0-0 <0.9.0-0',
+112 silly addNameRange   hasData: true }
+113 silly addNameRange versions [ 'grunt-contrib-uglify',
+113 silly addNameRange   [ '0.1.0',
+113 silly addNameRange     '0.1.1',
+113 silly addNameRange     '0.1.2',
+113 silly addNameRange     '0.2.0',
+113 silly addNameRange     '0.2.1',
+113 silly addNameRange     '0.2.2',
+113 silly addNameRange     '0.2.3',
+113 silly addNameRange     '0.2.4',
+113 silly addNameRange     '0.2.5',
+113 silly addNameRange     '0.2.6',
+113 silly addNameRange     '0.2.7',
+113 silly addNameRange     '0.3.0',
+113 silly addNameRange     '0.3.1',
+113 silly addNameRange     '0.1.1-rc5',
+113 silly addNameRange     '0.1.1-rc6',
+113 silly addNameRange     '0.3.2',
+113 silly addNameRange     '0.3.3',
+113 silly addNameRange     '0.4.0',
+113 silly addNameRange     '0.5.0',
+113 silly addNameRange     '0.4.1',
+113 silly addNameRange     '0.5.1',
+113 silly addNameRange     '0.6.0',
+113 silly addNameRange     '0.7.0',
+113 silly addNameRange     '0.8.0' ] ]
+114 verbose addNamed [ 'grunt-contrib-uglify', '0.8.0' ]
+115 verbose addNamed [ '0.8.0', '0.8.0' ]
+116 silly lockFile 54aac03d-grunt-contrib-uglify-0-8-0 grunt-contrib-uglify@0.8.0
+117 verbose lock grunt-contrib-uglify@0.8.0 /Users/Gema/.npm/54aac03d-grunt-contrib-uglify-0-8-0.lock
+118 silly lockFile f5269920-y-grunt-contrib-uglify-0-8-0-tgz https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.8.0.tgz
+119 verbose lock https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.8.0.tgz /Users/Gema/.npm/f5269920-y-grunt-contrib-uglify-0-8-0-tgz.lock
+120 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.8.0.tgz',
+120 verbose addRemoteTarball   '6897a450fab8563c9885e388bd705a5ff2c3937e' ]
+121 info retry fetch attempt 1 at 21:04:11
+122 verbose fetch to= /var/folders/22/g4j3xy2j03bfgcl9sm5z1gb00000gn/T/npm-24808-a7WIt7Jb/registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.8.0.tgz
+123 http GET https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.8.0.tgz
+124 http 200 https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+125 silly lockFile f6eb0009-t-grunt-contrib-concat-0-5-1-tgz https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+126 silly lockFile f6eb0009-t-grunt-contrib-concat-0-5-1-tgz https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.1.tgz
+127 silly lockFile 63a362d5-grunt-contrib-concat-0-5-1 grunt-contrib-concat@0.5.1
+128 silly lockFile 63a362d5-grunt-contrib-concat-0-5-1 grunt-contrib-concat@0.5.1
+129 silly lockFile 03406c1b-grunt-contrib-concat-0-5-1 grunt-contrib-concat@~0.5.1
+130 silly lockFile 03406c1b-grunt-contrib-concat-0-5-1 grunt-contrib-concat@~0.5.1
+131 http 200 https://registry.npmjs.org/compression/-/compression-1.4.1.tgz
+132 silly lockFile f2c989f2-ompression-compression-1-4-1-tgz https://registry.npmjs.org/compression/-/compression-1.4.1.tgz
+133 silly lockFile f2c989f2-ompression-compression-1-4-1-tgz https://registry.npmjs.org/compression/-/compression-1.4.1.tgz
+134 silly lockFile 5722d64b-compression-1-4-1 compression@1.4.1
+135 silly lockFile 5722d64b-compression-1-4-1 compression@1.4.1
+136 silly lockFile 98924065-compression-1-4-1 compression@~1.4.1
+137 silly lockFile 98924065-compression-1-4-1 compression@~1.4.1
+138 http 200 https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.8.0.tgz
+139 silly lockFile f5269920-y-grunt-contrib-uglify-0-8-0-tgz https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.8.0.tgz
+140 silly lockFile f5269920-y-grunt-contrib-uglify-0-8-0-tgz https://registry.npmjs.org/grunt-contrib-uglify/-/grunt-contrib-uglify-0.8.0.tgz
+141 silly lockFile 54aac03d-grunt-contrib-uglify-0-8-0 grunt-contrib-uglify@0.8.0
+142 silly lockFile 54aac03d-grunt-contrib-uglify-0-8-0 grunt-contrib-uglify@0.8.0
+143 silly lockFile 8389ff3e-grunt-contrib-uglify-0-8-0 grunt-contrib-uglify@~0.8.0
+144 silly lockFile 8389ff3e-grunt-contrib-uglify-0-8-0 grunt-contrib-uglify@~0.8.0
+145 error Error: EACCES, mkdir '/Users/Gema/.npm/grunt-contrib-concat/0.5.1'
+145 error  { [Error: EACCES, mkdir '/Users/Gema/.npm/grunt-contrib-concat/0.5.1']
+145 error   errno: 3,
+145 error   code: 'EACCES',
+145 error   path: '/Users/Gema/.npm/grunt-contrib-concat/0.5.1',
+145 error   parent: 'Brosmar' }
+146 error Please try running this command again as root/Administrator.
+147 error System Darwin 13.4.0
+148 error command "node" "/usr/local/bin/npm" "install"
+149 error cwd /Volumes/Work/uniformes
+150 error node -v v0.10.33
+151 error npm -v 1.4.28
+152 error path /Users/Gema/.npm/grunt-contrib-concat/0.5.1
+153 error code EACCES
+154 error errno 3
+155 error stack Error: EACCES, mkdir '/Users/Gema/.npm/grunt-contrib-concat/0.5.1'
+156 verbose exit [ 3, true ]
