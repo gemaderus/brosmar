@@ -1,8 +1,16 @@
 .content {
     height: auto;
-    margin: 6rem auto 0;
+    // margin: 6rem auto 0;
     min-height: 100%;
     max-width: 100%;
+}
+
+.content-column-holder {
+    border-bottom: 1px solid $main-color;
+
+    @media all and (min-width: 769px) {
+        padding-bottom: 4rem;
+    }
 }
 
 .content-column {
@@ -42,4 +50,7 @@
     text-align: center;
 }
 
-
+.content-column-item-photo {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}

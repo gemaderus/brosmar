@@ -1,0 +1,7 @@
+.information {
+    border-bottom: 1px solid $main-color;
+
+    @media all and (min-width: 769px) {
+        padding-bottom: 4rem;
+    }
+}

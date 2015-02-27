@@ -1,8 +1,23 @@
-.title-home, .subtitle-home {
-    text-align: center;
-    margin-top: 0;
+.subtitle-home, .title-home {
+    text-shadow: 0 0 5px #888;
 }
 
-// .action {
-//     color: $main-color;
-// }
+.intro {
+    position: relative;
+}
+
+.intro-heading {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+    margin-top: -5%;
+    text-align: center;
+}
+
+.intro-button {
+    text-align: center;
+}
+
