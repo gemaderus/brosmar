@@ -22,10 +22,11 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 2rem;
 
     @media all and (min-width: 769px) {
         font-size: 3rem;
+        line-height: 3rem;
     }
 }
 
