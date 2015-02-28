@@ -1,24 +1,51 @@
-.subtitle-home, .title-home {
-    text-shadow: 0 0 5px #888;
-}
-
 .intro {
     position: relative;
 }
 
 .intro-heading {
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    margin-left: -40%;
-    margin-top: -5%;
+    padding: 0 3rem;
+
+    @media all and (min-width: 769px) {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        margin-left: -40%;
+        margin-top: -12%;
+        text-align: center;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    @media all and (min-width: 1000px) {
+        margin-top: -10%;
+    }
+
+    @media all and (min-width: 1089px) {
+        margin-top: -6%;
+    }
+}
+
+.subtitle-home, .title-home {
     text-align: center;
-    pointer-events: none;
+
+     @media all and (min-width: 769px) {
+        text-shadow: 0 0 5px #888;
+    }
+}
+
+.intro-heading.title-home {
+    position: absolute;
+}
+
+.intro-heading-title {
+    position: absolute;
 }
 
 .intro-button {
     text-align: center;
 }
+
+
 
