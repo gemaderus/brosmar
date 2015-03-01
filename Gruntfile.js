@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 
     open : {
       dev : {
-        path: 'http://localhost:3000/index',
+        path: 'http://localhost:3000',
         app: 'Google Chrome'
       }
     },
@@ -206,7 +206,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['help']);
   grunt.registerTask('build', ['uglify', 'sass:dist', 'autoprefixer']);
   grunt.registerTask('sprites', ['sprite']);
-  grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore', 'rename']);
+  grunt.registerTask('svg', ['svgmin', 'svgstore', 'rename', 'clean']);
   grunt.registerTask('server', ['concat', 'sass:dev', 'express', 'open:dev', 'watch']);
   grunt.registerTask('heroku', ['uglify', 'sass:dist', 'autoprefixer']);
 }
