@@ -87,27 +87,39 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['assets/sandbox.svg', 'assets/svg/compressed', 'assets/svg/output'],
+    clean: ['assets/svg/icons/compressed','assets/svg/logos/compressed'],
 
     svgstore: {
       options: {
         prefix : 'icon-',
-        cleanup: ['fill','stroke'],
         svg: {
           style: "display: none;"
         }
       },
-      default : {
+      icons : {
+        options: {
+          cleanup: ['fill','stroke'],
+        },
         files: {
-          "assets/sandbox.svg": ["assets/svg/compressed/*.svg"]
+          "assets/sandbox-icons.svg": ["assets/svg/icons/compressed/*.svg"]
+        }
+      },
+      logos : {
+        files: {
+          "assets/sandbox-logos.svg": ["assets/svg/logos/compressed/*.svg"]
         }
       }
     },
 
     rename: {
-      svg: {
+      icons: {
         files: [
-            {src: ['assets/sandbox.svg'], dest: 'views/partial/svg.html'}
+            {src: ['assets/sandbox-icons.svg'], dest: 'views/partial/svg-icons.html'}
+        ]
+      },
+      logos: {
+        files: [
+            {src: ['assets/sandbox-logos.svg'], dest: 'views/partial/svg-logos.html'}
         ]
       }
     },
@@ -119,11 +131,17 @@ module.exports = function(grunt) {
           { removeUselessStrokeAndFill: false }
         ]
       },
-      dist: {
+      icons: {
         expand: true,
-        cwd: 'assets/svg',
+        cwd: 'assets/svg/icons',
         src: ['*.svg'],
-        dest: 'assets/svg/compressed'
+        dest: 'assets/svg/icons/compressed'
+      },
+      logo: {
+        expand: true,
+        cwd: 'assets/svg/logos',
+        src: ['*.svg'],
+        dest: 'assets/svg/logos/compressed'
       }
     },
 
@@ -188,7 +206,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['help']);
   grunt.registerTask('build', ['uglify', 'sass:dist', 'autoprefixer']);
   grunt.registerTask('sprites', ['sprite']);
-  grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore', 'rename:svg']);
+  grunt.registerTask('svg', ['clean', 'svgmin', 'svgstore', 'rename']);
   grunt.registerTask('server', ['concat', 'sass:dev', 'express', 'open:dev', 'watch']);
   grunt.registerTask('heroku', ['uglify', 'sass:dist', 'autoprefixer']);
 }
