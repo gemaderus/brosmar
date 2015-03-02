@@ -1,8 +1,6 @@
 var express = require('express');
 var compress = require('compression');
 
-console.log(process.env);
-
 var port = process.env.PORT || 3000;
 var env = process.env.NODE_ENV || 'development';
 
