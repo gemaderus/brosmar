@@ -19,7 +19,7 @@
             }
         }
         .toggler-content {
-            max-height: 180px;
+            max-height: 183px;
         }
     }
 
@@ -85,8 +85,12 @@
     vertical-align: middle;
     color: $white;
     font-weight: bold;
-    font-size: 1.4rem;
-    padding: 1.9rem 2rem;
+    font-size: 1.6rem;
+    padding: 2.7rem 2rem;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .close-header {
@@ -112,7 +116,7 @@
 }
 
 .toogler-content a {
-    padding: 1.5rem 2rem;
+    padding: 2.1rem;
 }
 
 .toogler-navigation {
@@ -126,7 +130,7 @@
 .toggler-navigation li a {
 
     @media all and (min-width: 769px) {
-        padding: 1.5rem 2rem;
+        padding: 2rem;
     }
 }
 
@@ -137,7 +141,7 @@
 .toggler-items {
     display: block;
     border-bottom: 1px solid darken($main-color, 5%);
-    line-height: 3.5rem;
+    line-height: 4rem;
     cursor: pointer;
 
     &:hover {
@@ -146,7 +150,7 @@
 
     a {
         color: $white;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         display: inline-block;
         padding: 1rem 2rem;
         font-weight: 700;
