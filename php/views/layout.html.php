@@ -3,26 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>
-      {% if title %}
-      {{title}}
-      {% else %}
-      Uniformes Colegiales Andalucía
-      {% endif %}
-    </title>
+    <title>Uniformes Colegiales Andalucía</title>
     <meta name="description" content="Uniformes Colegiales Andalucía SL">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/stylesheets/sandbox.css" />
-
-    {% if env == "development" %}
-    <script src="//localhost:35729/livereload.js"></script>
-    {% endif %}
-
+    <link rel="stylesheet" href="/public/stylesheets/sandbox.css" />
   </head>
   <body>
 
-    {% include "partial/svg-icons.html" %}
-    {% include "partial/svg-logos.html" %}
+    <?php echo partial('svg-icons.html.php'); ?>
+    <?php echo partial('svg-logos.html.php'); ?>
 
     <div class="header mb6 dmb0">
       <div class="container menu-holder">
@@ -50,8 +39,7 @@
     </div>
     <div class="content">
 
-        {% block content_column %}
-        {% endblock %}
+        <?php echo $content; ?>
 
     </div>
 
@@ -74,7 +62,7 @@
       <span class="brand">© Copyright 2015 Uniformes Colegiales Andalucía</span>
     </div>
 
-    <script src="/javascript/sandbox.js"></script>
+    <script src="/public/javascript/sandbox.js"></script>
 
   </body>
 </html>

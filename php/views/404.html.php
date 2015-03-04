@@ -3,28 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>
-      {% if title %}
-      {{title}}
-      {% else %}
-      Uniformes Colegiales Andalucía
-      {% endif %}
-    </title>
+    <title>Uniformes Colegiales Andalucía</title>
     <meta name="description" content="Uniformes Colegiales Andalucía SL">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/stylesheets/sandbox.css" />
-
-    {% if env == "development" %}
-    <script src="//localhost:35729/livereload.js"></script>
-    {% endif %}
-
+    <link rel="stylesheet" href="/public/stylesheets/sandbox.css" />
   </head>
   <body>
 
-    {% include "partial/svg-icons.html" %}
-    {% include "partial/svg-logos.html" %}
+    <?php echo partial('svg-icons.html.php'); ?>
+    <?php echo partial('svg-logos.html.php'); ?>
 
-    <div class="header mb6 dmb0">
+    <div class="header mb3 dmb0">
       <div class="container menu-holder">
           <div class="navigation">
               <div class="logo">
@@ -41,17 +30,19 @@
           </div>
           <div class="toggler-content">
               <ul class="toggler-navigation">
-                  <li class="toggler-items"><a class="st-a js-scroll" href="#valores">valores</a></li>
-                  <li class="toggler-items"><a class="st-a js-scroll" href="#empresa">empresa</a></li>
-                  <li class="toggler-items"><a class="st-a js-scroll" href="#contacto">contacto</a></li>
+                  <li class="toggler-items"><a class="st-a" href="/#valores">valores</a></li>
+                  <li class="toggler-items"><a class="st-a" href="/#empresa">empresa</a></li>
+                  <li class="toggler-items"><a class="st-a" href="/#contacto">contacto</a></li>
               </ul>
           </div>
       </div>
     </div>
     <div class="content">
 
-        {% block content_column %}
-        {% endblock %}
+        <div class="call-action container-heading content-error mb3" id="contacto">
+          <h2 class="mb4">Lo que buscas ya no está aquí. Pero estamos a tu disposición para ayudarte. Cuéntanos que necesitas, estaremos encantados de hablar contigo.</h2>
+          <a href="mailto:ddiaz@colegialesandalucia.com" class="link-action large">Contacto</a>
+        </div>
 
     </div>
 
@@ -74,7 +65,9 @@
       <span class="brand">© Copyright 2015 Uniformes Colegiales Andalucía</span>
     </div>
 
-    <script src="/javascript/sandbox.js"></script>
+    <script src="/public/javascript/sandbox.js"></script>
 
   </body>
 </html>
+
+
